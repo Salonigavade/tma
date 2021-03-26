@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
-    <property name="HOME_LOG" value="C:\\Users\\sagavade\\eclipse-workspace\\TMA\\log\\app-new.log"/>
+    <property name="HOME_LOG" value="C:\\Users\\KKAILASS\\git\\tma\\TMA\\log\\app-new.log"/>
 
     <appender name="FILE-ROLLING" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <file>${HOME_LOG}</file>
