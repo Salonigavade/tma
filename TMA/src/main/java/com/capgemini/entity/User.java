@@ -1,5 +1,6 @@
 package com.capgemini.entity;
 
+import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
@@ -61,5 +62,5 @@ public class User {
 	
 	@OneToMany(mappedBy = "user",cascade = CascadeType.ALL)
 	@JsonIgnore
-	private Set<Player> players;
+	private List<Player> players;
 }

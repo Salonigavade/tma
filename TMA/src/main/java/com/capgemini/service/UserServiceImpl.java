@@ -10,7 +10,7 @@ import com.capgemini.entity.User;
 import com.capgemini.exception.UserException;
 import com.capgemini.repository.UserRepository;
 
-@Service
+@Service(value = "userService")
 //@Transactional
 public class UserServiceImpl implements UserService{
 

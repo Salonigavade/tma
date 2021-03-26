@@ -17,4 +17,6 @@ public interface LoginRepository extends JpaRepository<User, Integer> {
 	@Query("select rs from User rs where rs.emailId=?1")
 	Optional<User> findByEmailId(String emailId);
 	
+	
+	
 }

@@ -1,5 +1,6 @@
 package com.capgemini.entity;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
@@ -47,7 +48,7 @@ public class Player {
 	
 	@NotNull
 	@Column(name = "price")
-	private Double priceDouble;
+	private Double price;
 	
 	@NotNull
 	@Column(name = "teamName")
@@ -69,8 +70,8 @@ public class Player {
 	@Lob
 	private byte[] photos;
 	
-	@ManyToOne
-	@JoinColumn(name = "userId",nullable = false)
+	@ManyToOne(cascade = CascadeType.ALL)
+	@JoinColumn(name = "user_id")
 	private User user;
 	
 	

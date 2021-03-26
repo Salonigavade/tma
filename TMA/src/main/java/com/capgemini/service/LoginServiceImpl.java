@@ -15,7 +15,7 @@ import java.util.Optional;
 /**
  * The Class LoginServiceImpl.
  */
-@Service
+@Service(value = "loginService")
 public class LoginServiceImpl implements LoginService {
 
 	@Autowired
