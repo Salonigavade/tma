@@ -60,6 +60,7 @@ public class PlayerServiceImpl implements PlayerService{
 	@Override
 	public Integer deletePlayerById(Integer playerId) throws PlayerException {
 		try {
+			
 			playerRepository.deleteById(playerId);
 			return 1;
 		} catch (DataAccessException e) {
@@ -84,9 +85,9 @@ public class PlayerServiceImpl implements PlayerService{
 	}
 
 	@Override
-	public List<Player> serachPlayerByName(String playerFirstName) throws PlayerException {
+	public List<Player> serachPlayerByFirstName(String playerFirstName) throws PlayerException {
 		try {
-			return playerRepository.findByPlayerName(playerFirstName);
+			return playerRepository.findByPlayerFirstName(playerFirstName);
 		} catch (DataAccessException e) {
 			throw new PlayerException(e.getMessage(),e);
 		}
@@ -110,6 +111,16 @@ public class PlayerServiceImpl implements PlayerService{
 			}
 			else 
 				throw new PlayerException("unable to find id");
+		} catch (DataAccessException e) {
+			throw new PlayerException(e.getMessage(),e);
+		}
+	}
+
+
+	@Override
+	public List<Player> serachPlayerByLastName(String playerLastName) throws PlayerException {
+		try {
+			return playerRepository.findByPlayerLastName(playerLastName);
 		} catch (DataAccessException e) {
 			throw new PlayerException(e.getMessage(),e);
 		}

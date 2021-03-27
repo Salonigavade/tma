@@ -13,11 +13,14 @@ import com.capgemini.entity.Player;
 public interface PlayerRepository extends JpaRepository<Player, Integer>{
 	
 	@Query("select p from Player p where p.playerFirstName=?1")
-	List<Player> findByPlayerName(String playerFirstName);
+	List<Player> findByPlayerFirstName(String playerFirstName);
 
+	@Query("select p from Player p where p.playerLastName=?1")
+	List<Player> findByPlayerLastName(String playerLasttName);
+	
 	@Query("select p from Player p where p.teamName=?1")
 	List<Player> findPlayerByTeamName(String teamName);
 
-	List<Player> findByUserId(Integer id);
+	//List<Player> findByUserId(Integer id);
 //	Optional<Player> findByIdAndUserId(Integer playerId,Integer id);
 }

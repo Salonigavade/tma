@@ -1,5 +1,5 @@
 package com.capgemini.entity;
 
 public enum Description {
-	BATSMAN,BOWLER,AlL_ROUNDER;
+	BATSMAN,BOWLER,ALL_ROUNDER;
 }

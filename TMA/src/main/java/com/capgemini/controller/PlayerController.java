@@ -55,7 +55,7 @@ public class PlayerController {
 
 	//delet by id
 	//localhost:8080/api/player/1
-	@DeleteMapping("/player/{playerId}")
+	@DeleteMapping("/player/delete/{playerId}")
 	public String deletePlayerById(@PathVariable( value = "playerId") Integer playerId){
 		try {
 			Integer status=playerService.deletePlayerById(playerId);
@@ -90,18 +90,31 @@ public class PlayerController {
 		}
 	}
 
-	//serach by name
+	//serach by first name
 	//localhost:8080/api/player/searchByFirst/hardik
 	@GetMapping("/player/searchByFirst/{playerFirstName}")
 	public ResponseEntity<List<Player>> serchPlayerByFirstName(@PathVariable String playerFirstName){
 		try {
-			List<Player> players=playerService.serachPlayerByName(playerFirstName);
+			List<Player> players=playerService.serachPlayerByFirstName(playerFirstName);
 			return new ResponseEntity<>(players,HttpStatus.OK);
 
 		} catch (PlayerException e) {
 			throw new ResponseStatusException(HttpStatus.BAD_REQUEST,e.getMessage());
 		}
 	}
+	
+	//serach by last name
+		//localhost:8080/api/player/searchByLast/Raina
+		@GetMapping("/player/searchByLast/{playerLastName}")
+		public ResponseEntity<List<Player>> serchPlayerByLasttName(@PathVariable String playerLastName){
+			try {
+				List<Player> players=playerService.serachPlayerByLastName(playerLastName);
+				return new ResponseEntity<>(players,HttpStatus.OK);
+
+			} catch (PlayerException e) {
+				throw new ResponseStatusException(HttpStatus.BAD_REQUEST,e.getMessage());
+			}
+		}
 
 	//serach by team
 	//localhost:8080/api/player/searchByTeam/mi
