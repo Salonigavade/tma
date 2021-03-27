@@ -143,3 +143,7 @@
 2021-03-26 12:43:48,877 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
 2021-03-26 12:43:48,893 INFO com.capgemini.TMA.TmaApplication [restartedMain] Started TmaApplication in 2.184 seconds (JVM running for 357.71)
 2021-03-26 12:43:48,896 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-03-26 15:13:24,233 WARN com.zaxxer.hikari.pool.HikariPool [HikariPool-5 housekeeper] HikariPool-5 - Thread starvation or clock leap detected (housekeeper delta=22m35s707ms908µs900ns).
+2021-03-26 16:37:33,115 WARN com.zaxxer.hikari.pool.HikariPool [HikariPool-5 housekeeper] HikariPool-5 - Thread starvation or clock leap detected (housekeeper delta=24m38s965ms913µs300ns).
+2021-03-26 18:40:36,085 WARN com.zaxxer.hikari.pool.HikariPool [HikariPool-5 housekeeper] HikariPool-5 - Thread starvation or clock leap detected (housekeeper delta=50m31s138ms399µs701ns).
+2021-03-26 19:05:17,263 WARN com.zaxxer.hikari.pool.HikariPool [HikariPool-5 housekeeper] HikariPool-5 - Thread starvation or clock leap detected (housekeeper delta=9m41s129ms954µs400ns).
