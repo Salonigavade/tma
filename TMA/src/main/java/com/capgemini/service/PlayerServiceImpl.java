@@ -12,6 +12,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 import org.springframework.web.multipart.MultipartFile;
 
+import com.capgemini.entity.Description;
 import com.capgemini.entity.Login;
 import com.capgemini.entity.Player;
 import com.capgemini.entity.TeamName;
@@ -29,10 +30,10 @@ public class PlayerServiceImpl implements PlayerService{
 
 	@Autowired
 	private PlayerRepository playerRepository;
-	
+
 	@Autowired
 	private UserRepository userRepository;
-	
+
 	@Override
 	public Player createPlayer(Integer id, Player player) throws PlayerException {
 		try {
@@ -43,12 +44,11 @@ public class PlayerServiceImpl implements PlayerService{
 			}	
 			player.setUser(u);
 			return playerRepository.save(player);
-				
-			
+
+
 		} catch (DataAccessException e) {
 			throw new PlayerException(e.getMessage(),e);
 		}
-	
 	}
 
 
@@ -60,11 +60,12 @@ public class PlayerServiceImpl implements PlayerService{
 			throw new PlayerException(e.getMessage(),e);
 		}
 	}
+	
 
 	@Override
 	public Integer deletePlayerById(Integer playerId) throws PlayerException {
 		try {
-			
+
 			playerRepository.deleteById(playerId);
 			return 1;
 		} catch (DataAccessException e) {
@@ -82,12 +83,13 @@ public class PlayerServiceImpl implements PlayerService{
 			}else {
 				throw new PlayerException("No record found for given employee id");
 			}
-			
+
 		} catch (DataAccessException e) {
 			throw new PlayerException(e.getMessage(),e);
 		}
 	}
 
+	
 	@Override
 	public List<Player> searchPlayerByFirstName(String playerFirstName) throws PlayerException {
 		try {
@@ -97,6 +99,17 @@ public class PlayerServiceImpl implements PlayerService{
 		}
 	}
 
+	
+	@Override
+	public List<Player> searchPlayerByLastName(String playerLastName) throws PlayerException {
+		try {
+			return playerRepository.findByPlayerLastName(playerLastName);
+		} catch (DataAccessException e) {
+			throw new PlayerException(e.getMessage(),e);
+		}
+	}
+
+	
 	@Override
 	public List<Player> searchPlayerByTeamName(TeamName teamName) throws PlayerException {
 		try {
@@ -106,6 +119,16 @@ public class PlayerServiceImpl implements PlayerService{
 		}
 	}
 
+	
+	@Override
+	public List<Player> searchPlayerByDescription(Description description) throws PlayerException {
+		try {
+			return playerRepository.findByDescription(description);
+		} catch (DataAccessException e) {
+			throw new PlayerException(e.getMessage(),e);
+		}
+	}
+	
 	@Override
 	public Player getPlayerById(Integer playerId) throws PlayerException {
 		try {
@@ -120,35 +143,22 @@ public class PlayerServiceImpl implements PlayerService{
 		}
 	}
 
-
-	@Override
-	public List<Player> searchPlayerByLastName(String playerLastName) throws PlayerException {
-		try {
-			return playerRepository.findByPlayerLastName(playerLastName);
-		} catch (DataAccessException e) {
-			throw new PlayerException(e.getMessage(),e);
-		}
-	}
-
-
 	@Override
 	public boolean uploadPhoto(Integer id,MultipartFile file) throws PlayerException {
 		boolean isUpload=false;
 		try {
 			Player player=playerRepository.findById(id).get();
 			String fileName = StringUtils.cleanPath(file.getOriginalFilename());
-	
+
 			player.setPhotos(fileName);
 			player.setFile(file.getBytes());;
 			playerRepository.save(player);
-			isUpload=true;
-		   // return playerRepository.save(p);                    
+			isUpload=true;                
 		} catch (DataAccessException | IOException e) {
 			throw new PlayerException(e.getMessage(),e);
 		}
 		return isUpload;
 	}
-
 
 	@Override
 	public byte[] getPhotoById(Integer playerId) throws PlayerException {
@@ -173,24 +183,22 @@ public class PlayerServiceImpl implements PlayerService{
 	}
 
 
-	@Override
-	public Player create(Integer id, MultipartFile file, Player player) throws PlayerException {
-		try {
-			User user=userRepository.findById(id).get();
-			String fileName = StringUtils.cleanPath(file.getOriginalFilename());
-	
-			player.setPhotos(fileName);
-			player.setFile(file.getBytes());
-			player.setUser(user);
-			return playerRepository.save(player);                    
-		} catch (DataAccessException | IOException e) {
-			throw new PlayerException(e.getMessage(),e);
-		}
-
-	}
-
-	
-
-
 
 }
+
+//
+//@Override
+//public Player create(Integer id, MultipartFile file, Player player) throws PlayerException {
+//	try {
+//		User user=userRepository.findById(id).get();
+//		String fileName = StringUtils.cleanPath(file.getOriginalFilename());
+//
+//		player.setPhotos(fileName);
+//		player.setFile(file.getBytes());
+//		player.setUser(user);
+//		return playerRepository.save(player);                    
+//	} catch (DataAccessException | IOException e) {
+//		throw new PlayerException(e.getMessage(),e);
+//	}
+//
+//}

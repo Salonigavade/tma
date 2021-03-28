@@ -7,6 +7,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
+import com.capgemini.entity.Description;
 import com.capgemini.entity.Player;
 import com.capgemini.entity.TeamName;
 
@@ -21,6 +22,8 @@ public interface PlayerRepository extends JpaRepository<Player, Integer>{
 	
 
 	List<Player> findByTeamName(TeamName teamName);
+
+	List<Player> findByDescription(Description description);
 
 	//List<Player> findByUserId(Integer id);
 //	Optional<Player> findByIdAndUserId(Integer playerId,Integer id);

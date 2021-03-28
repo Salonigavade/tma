@@ -26,7 +26,7 @@ public class LoginController {
 	@Autowired 
 	private LoginService loginService;
 
-	//http://localhost:8081/springfox/api/Login/login
+	//http://localhost:8080/api/Login/login
 	
 	@PostMapping("/login")
 	public ResponseEntity<?> signIn( @RequestBody Login registerUser) {
@@ -35,7 +35,7 @@ public class LoginController {
 		return new ResponseEntity<>(str, HttpStatus.OK);
 	}
 
-	//http://localhost:8081/springfox/api/Login/logout
+	//http://localhost:8080/api/Login/logout
 	@PostMapping("/logout") 
 
 	public ResponseEntity<?> signOut( @RequestBody Logout registerUser) {
@@ -44,7 +44,7 @@ public class LoginController {
 	}
 	
 	
-	//http://localhost:8081/springfox/api/Login/reset/newPass
+	//http://localhost:8080/api/Login/reset/newPass
 	@PostMapping("/reset/{new_password}")
 	public ResponseEntity<?> changePassword( @RequestBody Login registerUser, @PathVariable String new_password) {
 		String str =loginService.changePassword(registerUser, new_password);

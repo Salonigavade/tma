@@ -21,6 +21,7 @@ import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.server.ResponseStatusException;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
+import com.capgemini.entity.Description;
 import com.capgemini.entity.Player;
 import com.capgemini.entity.TeamName;
 import com.capgemini.exception.PlayerException;
@@ -47,19 +48,7 @@ public class PlayerController {
 			throw new ResponseStatusException(HttpStatus.BAD_REQUEST,e.getMessage());
 		}
 	}
-	
-	//create player
-		//localhost:8080/api/playerNew/2
-		@PostMapping("/playerNew/{id}")
-		public ResponseEntity<Player> create(@PathVariable(value = "id") Integer id,@RequestParam("file") MultipartFile file,@RequestBody Player player){
-			try {
-				Player player2=playerService.create(id,file,player);
-				
-				return new ResponseEntity<>(player2,HttpStatus.CREATED);
-			} catch (PlayerException e) {
-				throw new ResponseStatusException(HttpStatus.BAD_REQUEST,e.getMessage());
-			}
-		}
+
 
 	//getAllPlayers
 	//localhost:8080/api/playerInfo
@@ -73,8 +62,8 @@ public class PlayerController {
 		}
 	}
 
-	//delet by id
-	//localhost:8080/api/player/1
+	//delete by id
+	//localhost:8080/api/player/delete/1
 	@DeleteMapping("/player/delete/{playerId}")
 	public String deletePlayerById(@PathVariable( value = "playerId") Integer playerId){
 		try {
@@ -122,19 +111,19 @@ public class PlayerController {
 			throw new ResponseStatusException(HttpStatus.BAD_REQUEST,e.getMessage());
 		}
 	}
-	
-	//serach by last name
-		//localhost:8080/api/player/searchByLast/Raina
-		@GetMapping("/player/searchByLast/{playerLastName}")
-		public ResponseEntity<List<Player>> searchPlayerByLastName(@PathVariable String playerLastName){
-			try {
-				List<Player> players=playerService.searchPlayerByLastName(playerLastName);
-				return new ResponseEntity<>(players,HttpStatus.OK);
 
-			} catch (PlayerException e) {
-				throw new ResponseStatusException(HttpStatus.BAD_REQUEST,e.getMessage());
-			}
+	//serach by last name
+	//localhost:8080/api/player/searchByLast/Raina
+	@GetMapping("/player/searchByLast/{playerLastName}")
+	public ResponseEntity<List<Player>> searchPlayerByLastName(@PathVariable String playerLastName){
+		try {
+			List<Player> players=playerService.searchPlayerByLastName(playerLastName);
+			return new ResponseEntity<>(players,HttpStatus.OK);
+
+		} catch (PlayerException e) {
+			throw new ResponseStatusException(HttpStatus.BAD_REQUEST,e.getMessage());
 		}
+	}
 
 	//serach by team
 	//localhost:8080/api/player/searchByTeam/mi
@@ -148,46 +137,74 @@ public class PlayerController {
 			throw new ResponseStatusException(HttpStatus.BAD_REQUEST,e.getMessage());
 		}
 	}
+	
+	//serach by Descriptin
+		//localhost:8080/api/player/searchByDescription/mi
+		@GetMapping("/player/searchByDescription/{description}")
+		public ResponseEntity<List<Player>> searchPlayerByDescription(@PathVariable Description description){
+			try {
+				List<Player> players=playerService.searchPlayerByDescription(description);
+				return new ResponseEntity<>(players,HttpStatus.OK);
+
+			} catch (PlayerException e) {
+				throw new ResponseStatusException(HttpStatus.BAD_REQUEST,e.getMessage());
+			}
+		}
 
 
 	//upload photo
-	//localhost:8080/api/upload/2
-	@PutMapping("/upload/{id}")
-	  public String uploadPhoto(@PathVariable(value = "id") Integer id,@RequestParam("file") MultipartFile file) {
-	    
-	    try {                       
-	    	boolean isUpload=playerService.uploadPhoto(id,file);
-	    	if(isUpload) {
-	    		String fileDownloadUri = ServletUriComponentsBuilder.fromCurrentContextPath()
+	//localhost:8080/api/player/upload/2
+	@PutMapping("/player/upload/{id}")
+	public String uploadPhoto(@PathVariable(value = "id") Integer id,@RequestParam("file") MultipartFile file) {
+
+		try {                       
+			boolean isUpload=playerService.uploadPhoto(id,file);
+			if(isUpload) {
+				String fileDownloadUri = ServletUriComponentsBuilder.fromCurrentContextPath()
 						.path("/api/player/download/" + id).toUriString();
 				return fileDownloadUri;
 			} else {
 				return "Could not upload certificate!";
 			}
-	      
-	    } catch (PlayerException e) {
+
+		} catch (PlayerException e) {
 			throw new ResponseStatusException(HttpStatus.BAD_REQUEST,e.getMessage());
-	    }
-	  }
-	
+		}
+	}
+
 	//download photo
 	//http://localhost:8080/api/player/download/1
-		@GetMapping("/player/download/{playerId}")
-		public ResponseEntity downloadFromDB(@PathVariable Integer playerId) {
-			
-			try {
-				String fileName = playerService.getPhotoNameById(playerId);
-				String type = URLConnection.guessContentTypeFromName(fileName);
-				byte[] photo = playerService.getPhotoById(playerId);
-				
-				return ResponseEntity.ok()
-						.contentType(MediaType.parseMediaType(type))
-						.header(HttpHeaders.CONTENT_DISPOSITION, "attachment; fileName=\"" 
-								+ fileName + "\"")
-						.body(photo);
-		
-			} catch (PlayerException e) {
-				throw new ResponseStatusException(HttpStatus.BAD_REQUEST,e.getMessage());
-		    }
+	@GetMapping("/player/download/{playerId}")
+	public ResponseEntity downloadFromDB(@PathVariable Integer playerId) {
+
+		try {
+			String fileName = playerService.getPhotoNameById(playerId);
+			String type = URLConnection.guessContentTypeFromName(fileName);
+			byte[] photo = playerService.getPhotoById(playerId);
+
+			return ResponseEntity.ok()
+					.contentType(MediaType.parseMediaType(type))
+					.header(HttpHeaders.CONTENT_DISPOSITION, "attachment; fileName=\"" 
+							+ fileName + "\"")
+					.body(photo);
+
+		} catch (PlayerException e) {
+			throw new ResponseStatusException(HttpStatus.BAD_REQUEST,e.getMessage());
 		}
+	}
 }
+
+
+//create player
+////localhost:8080/api/playerNew/2
+//@PostMapping("/playerNew/{id}")
+//public ResponseEntity<Player> create(@PathVariable(value = "id") Integer id,@RequestParam("file") MultipartFile file,@RequestBody Player player){
+//	try {
+//		Player player2=playerService.create(id,file,player);
+//		
+//		return new ResponseEntity<>(player2,HttpStatus.CREATED);
+//	} catch (PlayerException e) {
+//		throw new ResponseStatusException(HttpStatus.BAD_REQUEST,e.getMessage());
+//	}
+//}
+
