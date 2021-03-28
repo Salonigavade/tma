@@ -49,7 +49,7 @@ public class PlayerController {
 	}
 	
 	//create player
-		//localhost:8080/api/player/2
+		//localhost:8080/api/playerNew/2
 		@PostMapping("/playerNew/{id}")
 		public ResponseEntity<Player> create(@PathVariable(value = "id") Integer id,@RequestParam("file") MultipartFile file,@RequestBody Player player){
 			try {

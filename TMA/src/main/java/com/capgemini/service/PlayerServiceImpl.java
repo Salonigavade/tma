@@ -100,7 +100,7 @@ public class PlayerServiceImpl implements PlayerService{
 	@Override
 	public List<Player> searchPlayerByTeamName(TeamName teamName) throws PlayerException {
 		try {
-			return playerRepository.findByType(teamName);
+			return playerRepository.findByTeamName(teamName);
 		} catch (DataAccessException e) {
 			throw new PlayerException(e.getMessage(),e);
 		}

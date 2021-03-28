@@ -20,7 +20,7 @@ public interface PlayerRepository extends JpaRepository<Player, Integer>{
 	List<Player> findByPlayerLastName(String playerLasttName);
 	
 
-	List<Player> findByType(TeamName teamName);
+	List<Player> findByTeamName(TeamName teamName);
 
 	//List<Player> findByUserId(Integer id);
 //	Optional<Player> findByIdAndUserId(Integer playerId,Integer id);
