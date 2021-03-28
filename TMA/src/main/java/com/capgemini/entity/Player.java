@@ -65,16 +65,21 @@ public class Player {
 	@Enumerated(EnumType.STRING)
 	private Description description;
 	
-	@JsonIgnore
-	@Column(name = "photo")
-	@Lob
-	private byte[] photos;
+	@Column
+	private String photos;
 	
-	@ManyToOne(cascade = CascadeType.ALL)
+//	@JsonIgnore
+	@Column
+	@Lob
+	private byte[] file;
+	
+	@ManyToOne
 	@JoinColumn(name = "user_id")
 	private User user;
 	
-	
+	public Player(byte[] bytes) {
+		this.file=bytes;
+	}
 	
 	
 }

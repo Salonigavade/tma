@@ -60,7 +60,7 @@ public class User {
 //	@Column(name="reEnterpassword")
 //	private String ReEnterPassword;
 	
-	@OneToMany(mappedBy = "user",cascade = CascadeType.ALL)
+	@OneToMany(mappedBy = "user")
 	@JsonIgnore
 	private List<Player> players;
 }

@@ -8,6 +8,7 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
 import com.capgemini.entity.Player;
+import com.capgemini.entity.TeamName;
 
 @Repository
 public interface PlayerRepository extends JpaRepository<Player, Integer>{
@@ -18,8 +19,8 @@ public interface PlayerRepository extends JpaRepository<Player, Integer>{
 	@Query("select p from Player p where p.playerLastName=?1")
 	List<Player> findByPlayerLastName(String playerLasttName);
 	
-	@Query("select p from Player p where p.teamName=?1")
-	List<Player> findPlayerByTeamName(String teamName);
+
+	List<Player> findByType(TeamName teamName);
 
 	//List<Player> findByUserId(Integer id);
 //	Optional<Player> findByIdAndUserId(Integer playerId,Integer id);
