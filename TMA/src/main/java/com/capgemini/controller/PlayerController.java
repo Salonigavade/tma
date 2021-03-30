@@ -3,6 +3,7 @@ package com.capgemini.controller;
 import java.net.URLConnection;
 import java.util.List;
 
+import org.hibernate.id.IntegralDataTypeHolder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -100,6 +101,19 @@ public class PlayerController {
 			throw new ResponseStatusException(HttpStatus.BAD_REQUEST,e.getMessage());
 		}
 	}
+	
+	//serach by id
+		//localhost:8080/api/player/searchById/1
+		@GetMapping("/player/searchById/{playerId}")
+		public ResponseEntity<Player> getById(@PathVariable Integer playerId){
+			try {
+				Player players=playerService.getPlayerById(playerId);
+				return new ResponseEntity<>(players,HttpStatus.OK);
+
+			} catch (PlayerException e) {
+				throw new ResponseStatusException(HttpStatus.BAD_REQUEST,e.getMessage());
+			}
+		}
 
 	//serach by first name
 	//localhost:8080/api/player/searchByFirst/hardik
