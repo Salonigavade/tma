@@ -12,10 +12,13 @@ import com.capgemini.repository.LoginRepository;
 
 import java.util.Optional;
 
+import javax.transaction.Transactional;
+
 /**
  * The Class LoginServiceImpl.
  */
 @Service(value = "loginService")
+//@Transactional
 public class LoginServiceImpl implements LoginService {
 
 	@Autowired

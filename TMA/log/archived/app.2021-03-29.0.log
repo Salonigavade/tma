@@ -1,0 +1,1089 @@
+2021-03-29 09:17:50,469 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.1.7.Final
+2021-03-29 09:17:50,570 INFO com.capgemini.TMA.TmaApplication [restartedMain] Starting TmaApplication using Java 1.8.0_251 on LIN51010173 with PID 12164 (C:\Users\sagavade\git\tma\TMA\target\classes started by sagavade in C:\Users\sagavade\git\tma\TMA)
+2021-03-29 09:17:50,571 DEBUG com.capgemini.TMA.TmaApplication [restartedMain] Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-03-29 09:17:50,572 INFO com.capgemini.TMA.TmaApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-03-29 09:17:50,793 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-03-29 09:17:50,795 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-03-29 09:17:52,968 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-29 09:17:53,141 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 145 ms. Found 3 JPA repository interfaces.
+2021-03-29 09:17:55,942 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-03-29 09:17:55,982 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-29 09:17:55,985 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2021-03-29 09:17:55,985 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-03-29 09:17:56,266 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-03-29 09:17:56,267 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 5470 ms
+2021-03-29 09:17:57,137 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-29 09:17:57,384 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-03-29 09:17:58,067 INFO org.hibernate.annotations.common.Version [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-29 09:17:58,574 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2021-03-29 09:17:59,231 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2021-03-29 09:17:59,381 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-29 09:18:02,258 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-29 09:18:02,291 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-29 09:18:02,383 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-03-29 09:18:04,303 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-29 09:18:04,606 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-29 09:18:05,702 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-03-29 09:18:05,774 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-03-29 09:18:05,864 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-29 09:18:05,889 INFO com.capgemini.TMA.TmaApplication [restartedMain] Started TmaApplication in 16.553 seconds (JVM running for 20.724)
+2021-03-29 09:18:07,192 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [RMI TCP Connection(2)-127.0.0.1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-29 09:18:07,193 INFO org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(2)-127.0.0.1] Initializing Servlet 'dispatcherServlet'
+2021-03-29 09:18:07,197 INFO org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(2)-127.0.0.1] Completed initialization in 3 ms
+2021-03-29 09:18:58,699 ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] [http-nio-8080-exec-3] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.http.InvalidMediaTypeException: Invalid mime type "null": 'mimeType' must not be empty] with root cause
+org.springframework.util.InvalidMimeTypeException: Invalid mime type "null": 'mimeType' must not be empty
+	at org.springframework.util.MimeTypeUtils.parseMimeType(MimeTypeUtils.java:189)
+	at org.springframework.http.MediaType.parseMediaType(MediaType.java:617)
+	at com.capgemini.controller.PlayerController.downloadFromDB(PlayerController.java:186)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2021-03-29 09:20:33,907 WARN org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver [http-nio-8080-exec-7] Resolved [org.springframework.web.server.ResponseStatusException: 400 BAD_REQUEST "Unable to access lob stream; nested exception is org.hibernate.HibernateException: Unable to access lob stream"]
+2021-03-29 09:20:53,056 WARN org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver [http-nio-8080-exec-9] Resolved [org.springframework.web.server.ResponseStatusException: 400 BAD_REQUEST "Unable to access lob stream; nested exception is org.hibernate.HibernateException: Unable to access lob stream"]
+2021-03-29 10:36:08,393 WARN org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver [http-nio-8080-exec-2] Resolved [org.springframework.web.server.ResponseStatusException: 400 BAD_REQUEST "Unable to access lob stream; nested exception is org.hibernate.HibernateException: Unable to access lob stream"]
+2021-03-29 10:36:37,049 WARN org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver [http-nio-8080-exec-1] Resolved [org.springframework.web.server.ResponseStatusException: 400 BAD_REQUEST "Unable to access lob stream; nested exception is org.hibernate.HibernateException: Unable to access lob stream"]
+2021-03-29 10:37:18,057 WARN org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver [http-nio-8080-exec-5] Resolved [org.springframework.web.server.ResponseStatusException: 400 BAD_REQUEST "Unable to access lob stream; nested exception is org.hibernate.HibernateException: Unable to access lob stream"]
+2021-03-29 10:37:46,272 WARN org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver [http-nio-8080-exec-7] Resolved [org.springframework.web.server.ResponseStatusException: 400 BAD_REQUEST "Unable to access lob stream; nested exception is org.hibernate.HibernateException: Unable to access lob stream"]
+2021-03-29 10:38:03,114 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [Thread-8] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-29 10:38:03,126 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [Thread-8] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-29 10:38:03,173 INFO com.zaxxer.hikari.HikariDataSource [Thread-8] HikariPool-1 - Shutdown initiated...
+2021-03-29 10:38:03,202 INFO com.zaxxer.hikari.HikariDataSource [Thread-8] HikariPool-1 - Shutdown completed.
+2021-03-29 10:38:04,196 INFO com.capgemini.TMA.TmaApplication [restartedMain] Starting TmaApplication using Java 1.8.0_251 on LIN51010173 with PID 12164 (C:\Users\sagavade\git\tma\TMA\target\classes started by sagavade in C:\Users\sagavade\git\tma\TMA)
+2021-03-29 10:38:04,197 DEBUG com.capgemini.TMA.TmaApplication [restartedMain] Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-03-29 10:38:04,198 INFO com.capgemini.TMA.TmaApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-03-29 10:38:05,566 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-29 10:38:05,654 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 86 ms. Found 3 JPA repository interfaces.
+2021-03-29 10:38:07,124 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-03-29 10:38:07,126 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-29 10:38:07,128 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2021-03-29 10:38:07,130 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-03-29 10:38:07,205 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-03-29 10:38:07,205 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 2993 ms
+2021-03-29 10:38:07,509 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-29 10:38:07,525 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Starting...
+2021-03-29 10:38:08,234 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Start completed.
+2021-03-29 10:38:08,235 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-29 10:38:08,954 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-29 10:38:08,956 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-29 10:38:09,014 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-03-29 10:38:09,624 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-29 10:38:09,789 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-29 10:38:10,368 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-03-29 10:38:10,456 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-03-29 10:38:10,482 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-29 10:38:10,501 INFO com.capgemini.TMA.TmaApplication [restartedMain] Started TmaApplication in 6.5 seconds (JVM running for 4825.339)
+2021-03-29 10:38:10,515 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-03-29 10:38:33,684 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-3] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-29 10:38:33,689 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-3] Initializing Servlet 'dispatcherServlet'
+2021-03-29 10:38:33,697 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-3] Completed initialization in 7 ms
+2021-03-29 10:38:33,756 WARN org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver [http-nio-8080-exec-3] Resolved [org.springframework.web.server.ResponseStatusException: 400 BAD_REQUEST "Unable to access lob stream; nested exception is org.hibernate.HibernateException: Unable to access lob stream"]
+2021-03-29 10:39:47,520 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [Thread-13] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-29 10:39:47,523 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [Thread-13] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-29 10:39:47,525 INFO com.zaxxer.hikari.HikariDataSource [Thread-13] HikariPool-2 - Shutdown initiated...
+2021-03-29 10:39:47,543 INFO com.zaxxer.hikari.HikariDataSource [Thread-13] HikariPool-2 - Shutdown completed.
+2021-03-29 10:39:48,093 INFO com.capgemini.TMA.TmaApplication [restartedMain] Starting TmaApplication using Java 1.8.0_251 on LIN51010173 with PID 12164 (C:\Users\sagavade\git\tma\TMA\target\classes started by sagavade in C:\Users\sagavade\git\tma\TMA)
+2021-03-29 10:39:48,095 DEBUG com.capgemini.TMA.TmaApplication [restartedMain] Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-03-29 10:39:48,096 INFO com.capgemini.TMA.TmaApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-03-29 10:39:48,996 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-29 10:39:49,041 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 43 ms. Found 3 JPA repository interfaces.
+2021-03-29 10:39:49,720 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-03-29 10:39:49,721 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-29 10:39:49,721 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2021-03-29 10:39:49,722 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-03-29 10:39:49,785 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-03-29 10:39:49,785 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1654 ms
+2021-03-29 10:39:49,931 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-29 10:39:49,942 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-3 - Starting...
+2021-03-29 10:39:50,324 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-3 - Start completed.
+2021-03-29 10:39:50,324 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-29 10:39:50,630 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-29 10:39:50,631 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-29 10:39:50,661 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-03-29 10:39:50,947 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-29 10:39:51,058 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-29 10:39:51,507 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-03-29 10:39:51,623 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-03-29 10:39:51,673 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-29 10:39:51,732 INFO com.capgemini.TMA.TmaApplication [restartedMain] Started TmaApplication in 3.796 seconds (JVM running for 4926.571)
+2021-03-29 10:39:51,745 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-03-29 10:39:58,364 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [Thread-19] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-29 10:39:58,366 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [Thread-19] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-29 10:39:58,369 INFO com.zaxxer.hikari.HikariDataSource [Thread-19] HikariPool-3 - Shutdown initiated...
+2021-03-29 10:39:58,400 INFO com.zaxxer.hikari.HikariDataSource [Thread-19] HikariPool-3 - Shutdown completed.
+2021-03-29 10:39:58,976 INFO com.capgemini.TMA.TmaApplication [restartedMain] Starting TmaApplication using Java 1.8.0_251 on LIN51010173 with PID 12164 (C:\Users\sagavade\git\tma\TMA\target\classes started by sagavade in C:\Users\sagavade\git\tma\TMA)
+2021-03-29 10:39:58,976 DEBUG com.capgemini.TMA.TmaApplication [restartedMain] Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-03-29 10:39:58,977 INFO com.capgemini.TMA.TmaApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-03-29 10:39:59,592 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-29 10:39:59,642 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 49 ms. Found 3 JPA repository interfaces.
+2021-03-29 10:40:00,126 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-03-29 10:40:00,128 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-29 10:40:00,129 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2021-03-29 10:40:00,130 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-03-29 10:40:00,183 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-03-29 10:40:00,183 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1197 ms
+2021-03-29 10:40:00,322 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-29 10:40:00,332 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-4 - Starting...
+2021-03-29 10:40:00,648 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-4 - Start completed.
+2021-03-29 10:40:00,649 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-29 10:40:00,907 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-29 10:40:00,908 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-29 10:40:00,939 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-03-29 10:40:01,203 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-29 10:40:01,300 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-29 10:40:01,584 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-03-29 10:40:01,619 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-03-29 10:40:01,634 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-29 10:40:01,652 INFO com.capgemini.TMA.TmaApplication [restartedMain] Started TmaApplication in 2.798 seconds (JVM running for 4936.491)
+2021-03-29 10:40:01,664 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-03-29 10:40:04,747 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-29 10:40:04,750 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-03-29 10:40:04,758 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Completed initialization in 8 ms
+2021-03-29 10:40:04,808 WARN org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver [http-nio-8080-exec-1] Resolved [org.springframework.web.server.ResponseStatusException: 400 BAD_REQUEST "Unable to access lob stream; nested exception is org.hibernate.HibernateException: Unable to access lob stream"]
+2021-03-29 10:43:09,924 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [Thread-25] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-29 10:43:09,929 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [Thread-25] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-29 10:43:09,934 INFO com.zaxxer.hikari.HikariDataSource [Thread-25] HikariPool-4 - Shutdown initiated...
+2021-03-29 10:43:10,004 INFO com.zaxxer.hikari.HikariDataSource [Thread-25] HikariPool-4 - Shutdown completed.
+2021-03-29 10:43:10,736 INFO com.capgemini.TMA.TmaApplication [restartedMain] Starting TmaApplication using Java 1.8.0_251 on LIN51010173 with PID 12164 (C:\Users\sagavade\git\tma\TMA\target\classes started by sagavade in C:\Users\sagavade\git\tma\TMA)
+2021-03-29 10:43:10,737 DEBUG com.capgemini.TMA.TmaApplication [restartedMain] Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-03-29 10:43:10,738 INFO com.capgemini.TMA.TmaApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-03-29 10:43:11,820 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-29 10:43:11,878 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 56 ms. Found 3 JPA repository interfaces.
+2021-03-29 10:43:12,554 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-03-29 10:43:12,555 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-29 10:43:12,556 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2021-03-29 10:43:12,557 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-03-29 10:43:12,601 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-03-29 10:43:12,601 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1854 ms
+2021-03-29 10:43:12,744 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-29 10:43:12,755 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-5 - Starting...
+2021-03-29 10:43:13,283 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-5 - Start completed.
+2021-03-29 10:43:13,284 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-29 10:43:13,576 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-29 10:43:13,578 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-29 10:43:13,614 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-03-29 10:43:14,018 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-29 10:43:14,126 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-29 10:43:14,456 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-03-29 10:43:14,503 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-03-29 10:43:14,516 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-29 10:43:14,531 INFO com.capgemini.TMA.TmaApplication [restartedMain] Started TmaApplication in 3.972 seconds (JVM running for 5129.37)
+2021-03-29 10:43:14,540 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-03-29 10:43:17,790 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [Thread-31] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-29 10:43:17,792 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [Thread-31] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-29 10:43:17,795 INFO com.zaxxer.hikari.HikariDataSource [Thread-31] HikariPool-5 - Shutdown initiated...
+2021-03-29 10:43:17,816 INFO com.zaxxer.hikari.HikariDataSource [Thread-31] HikariPool-5 - Shutdown completed.
+2021-03-29 10:43:18,499 INFO com.capgemini.TMA.TmaApplication [restartedMain] Starting TmaApplication using Java 1.8.0_251 on LIN51010173 with PID 12164 (C:\Users\sagavade\git\tma\TMA\target\classes started by sagavade in C:\Users\sagavade\git\tma\TMA)
+2021-03-29 10:43:18,500 DEBUG com.capgemini.TMA.TmaApplication [restartedMain] Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-03-29 10:43:18,500 INFO com.capgemini.TMA.TmaApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-03-29 10:43:19,520 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-29 10:43:19,544 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 22 ms. Found 3 JPA repository interfaces.
+2021-03-29 10:43:19,851 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-03-29 10:43:19,851 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-29 10:43:19,852 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2021-03-29 10:43:19,852 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-03-29 10:43:19,884 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-03-29 10:43:19,884 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1375 ms
+2021-03-29 10:43:19,999 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-29 10:43:20,004 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-6 - Starting...
+2021-03-29 10:43:20,313 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-6 - Start completed.
+2021-03-29 10:43:20,314 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-29 10:43:20,526 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-29 10:43:20,527 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-29 10:43:20,548 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-03-29 10:43:20,828 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-29 10:43:20,904 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-29 10:43:21,246 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-03-29 10:43:21,280 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-03-29 10:43:21,300 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-29 10:43:21,327 INFO com.capgemini.TMA.TmaApplication [restartedMain] Started TmaApplication in 2.971 seconds (JVM running for 5136.166)
+2021-03-29 10:43:21,339 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-03-29 10:43:25,797 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [Thread-37] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-29 10:43:25,801 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [Thread-37] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-29 10:43:25,804 INFO com.zaxxer.hikari.HikariDataSource [Thread-37] HikariPool-6 - Shutdown initiated...
+2021-03-29 10:43:25,826 INFO com.zaxxer.hikari.HikariDataSource [Thread-37] HikariPool-6 - Shutdown completed.
+2021-03-29 10:43:26,349 INFO com.capgemini.TMA.TmaApplication [restartedMain] Starting TmaApplication using Java 1.8.0_251 on LIN51010173 with PID 12164 (C:\Users\sagavade\git\tma\TMA\target\classes started by sagavade in C:\Users\sagavade\git\tma\TMA)
+2021-03-29 10:43:26,350 DEBUG com.capgemini.TMA.TmaApplication [restartedMain] Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-03-29 10:43:26,350 INFO com.capgemini.TMA.TmaApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-03-29 10:43:27,019 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-29 10:43:27,051 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 31 ms. Found 3 JPA repository interfaces.
+2021-03-29 10:43:27,528 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-03-29 10:43:27,529 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-29 10:43:27,530 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2021-03-29 10:43:27,531 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-03-29 10:43:27,575 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-03-29 10:43:27,576 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1218 ms
+2021-03-29 10:43:27,702 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-29 10:43:27,709 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-7 - Starting...
+2021-03-29 10:43:28,083 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-7 - Start completed.
+2021-03-29 10:43:28,084 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-29 10:43:28,265 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-29 10:43:28,266 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-29 10:43:28,287 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-03-29 10:43:28,641 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-29 10:43:28,723 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-29 10:43:29,063 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-03-29 10:43:29,103 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-03-29 10:43:29,121 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-29 10:43:29,146 INFO com.capgemini.TMA.TmaApplication [restartedMain] Started TmaApplication in 2.906 seconds (JVM running for 5143.986)
+2021-03-29 10:43:29,153 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-03-29 10:43:33,528 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-29 10:43:33,530 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-03-29 10:43:33,538 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Completed initialization in 7 ms
+2021-03-29 10:47:36,651 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [Thread-43] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-29 10:47:36,658 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [Thread-43] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-29 10:47:36,663 INFO com.zaxxer.hikari.HikariDataSource [Thread-43] HikariPool-7 - Shutdown initiated...
+2021-03-29 10:47:36,683 INFO com.zaxxer.hikari.HikariDataSource [Thread-43] HikariPool-7 - Shutdown completed.
+2021-03-29 10:47:37,509 INFO com.capgemini.TMA.TmaApplication [restartedMain] Starting TmaApplication using Java 1.8.0_251 on LIN51010173 with PID 12164 (C:\Users\sagavade\git\tma\TMA\target\classes started by sagavade in C:\Users\sagavade\git\tma\TMA)
+2021-03-29 10:47:37,510 DEBUG com.capgemini.TMA.TmaApplication [restartedMain] Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-03-29 10:47:37,510 INFO com.capgemini.TMA.TmaApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-03-29 10:47:38,478 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-29 10:47:38,516 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 37 ms. Found 3 JPA repository interfaces.
+2021-03-29 10:47:39,166 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-03-29 10:47:39,167 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-29 10:47:39,168 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2021-03-29 10:47:39,169 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-03-29 10:47:39,237 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-03-29 10:47:39,237 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1720 ms
+2021-03-29 10:47:39,510 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-29 10:47:39,572 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-8 - Starting...
+2021-03-29 10:47:40,018 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-8 - Start completed.
+2021-03-29 10:47:40,019 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-29 10:47:40,204 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-29 10:47:40,205 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-29 10:47:40,231 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-03-29 10:47:40,698 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-29 10:47:40,772 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-29 10:47:41,119 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-03-29 10:47:41,162 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-03-29 10:47:41,177 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-29 10:47:41,199 INFO com.capgemini.TMA.TmaApplication [restartedMain] Started TmaApplication in 3.913 seconds (JVM running for 5396.039)
+2021-03-29 10:47:41,208 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-03-29 10:48:51,017 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-3] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-29 10:48:51,019 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-3] Initializing Servlet 'dispatcherServlet'
+2021-03-29 10:48:51,026 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-3] Completed initialization in 6 ms
+2021-03-29 10:48:51,327 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-3] SQL Error: 0, SQLState: 42804
+2021-03-29 10:48:51,327 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-3] ERROR: column "file" is of type oid but expression is of type bytea
+  Hint: You will need to rewrite or cast the expression.
+  Position: 125
+2021-03-29 10:48:51,347 ERROR org.springframework.transaction.interceptor.TransactionInterceptor [http-nio-8080-exec-3] Application exception overridden by commit exception
+com.capgemini.exception.PlayerException: could not execute statement; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute statement
+	at com.capgemini.service.PlayerServiceImpl.createPlayer(PlayerServiceImpl.java:50)
+	at com.capgemini.service.PlayerServiceImpl$$FastClassBySpringCGLIB$$778c8d27.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:779)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692)
+	at com.capgemini.service.PlayerServiceImpl$$EnhancerBySpringCGLIB$$aea7e921.createPlayer(<generated>)
+	at com.capgemini.controller.PlayerController.createPlayer(PlayerController.java:47)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2021-03-29 10:48:51,352 ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] [http-nio-8080-exec-3] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.transaction.UnexpectedRollbackException: Transaction silently rolled back because it has been marked as rollback-only] with root cause
+org.springframework.transaction.UnexpectedRollbackException: Transaction silently rolled back because it has been marked as rollback-only
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:752)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:711)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.completeTransactionAfterThrowing(TransactionAspectSupport.java:688)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:392)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:692)
+	at com.capgemini.service.PlayerServiceImpl$$EnhancerBySpringCGLIB$$aea7e921.createPlayer(<generated>)
+	at com.capgemini.controller.PlayerController.createPlayer(PlayerController.java:47)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1060)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2021-03-29 10:49:16,930 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [Thread-49] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-29 10:49:16,933 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [Thread-49] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-29 10:49:16,936 INFO com.zaxxer.hikari.HikariDataSource [Thread-49] HikariPool-8 - Shutdown initiated...
+2021-03-29 10:49:16,982 INFO com.zaxxer.hikari.HikariDataSource [Thread-49] HikariPool-8 - Shutdown completed.
+2021-03-29 10:49:17,792 INFO com.capgemini.TMA.TmaApplication [restartedMain] Starting TmaApplication using Java 1.8.0_251 on LIN51010173 with PID 12164 (C:\Users\sagavade\git\tma\TMA\target\classes started by sagavade in C:\Users\sagavade\git\tma\TMA)
+2021-03-29 10:49:17,793 DEBUG com.capgemini.TMA.TmaApplication [restartedMain] Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-03-29 10:49:17,794 INFO com.capgemini.TMA.TmaApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-03-29 10:49:18,852 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-29 10:49:19,016 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 162 ms. Found 3 JPA repository interfaces.
+2021-03-29 10:49:20,132 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-03-29 10:49:20,133 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-29 10:49:20,134 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2021-03-29 10:49:20,135 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-03-29 10:49:20,170 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-03-29 10:49:20,170 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 2368 ms
+2021-03-29 10:49:20,288 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-29 10:49:20,296 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-9 - Starting...
+2021-03-29 10:49:20,713 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-9 - Start completed.
+2021-03-29 10:49:20,713 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-29 10:49:20,888 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-29 10:49:20,889 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-29 10:49:20,913 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-03-29 10:49:21,199 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-29 10:49:21,275 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-29 10:49:21,579 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-03-29 10:49:21,611 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-03-29 10:49:21,624 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-29 10:49:21,637 INFO com.capgemini.TMA.TmaApplication [restartedMain] Started TmaApplication in 3.966 seconds (JVM running for 5496.477)
+2021-03-29 10:49:21,646 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-03-29 10:49:24,460 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [Thread-55] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-29 10:49:24,463 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [Thread-55] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-29 10:49:24,465 INFO com.zaxxer.hikari.HikariDataSource [Thread-55] HikariPool-9 - Shutdown initiated...
+2021-03-29 10:49:24,710 INFO com.zaxxer.hikari.HikariDataSource [Thread-55] HikariPool-9 - Shutdown completed.
+2021-03-29 10:49:25,322 INFO com.capgemini.TMA.TmaApplication [restartedMain] Starting TmaApplication using Java 1.8.0_251 on LIN51010173 with PID 12164 (C:\Users\sagavade\git\tma\TMA\target\classes started by sagavade in C:\Users\sagavade\git\tma\TMA)
+2021-03-29 10:49:25,323 DEBUG com.capgemini.TMA.TmaApplication [restartedMain] Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-03-29 10:49:25,323 INFO com.capgemini.TMA.TmaApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-03-29 10:49:26,145 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-29 10:49:26,194 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 47 ms. Found 3 JPA repository interfaces.
+2021-03-29 10:49:26,677 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-03-29 10:49:26,679 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-29 10:49:26,679 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2021-03-29 10:49:26,679 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-03-29 10:49:26,720 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-03-29 10:49:26,720 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1391 ms
+2021-03-29 10:49:26,853 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-29 10:49:26,862 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-10 - Starting...
+2021-03-29 10:49:27,245 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-10 - Start completed.
+2021-03-29 10:49:27,246 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-29 10:49:27,461 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-29 10:49:27,462 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-29 10:49:27,493 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-03-29 10:49:27,797 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-29 10:49:27,904 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-29 10:49:28,550 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-03-29 10:49:28,619 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-03-29 10:49:28,648 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-29 10:49:28,671 INFO com.capgemini.TMA.TmaApplication [restartedMain] Started TmaApplication in 3.447 seconds (JVM running for 5503.505)
+2021-03-29 10:49:28,678 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-03-29 10:49:28,926 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-29 10:49:28,928 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2021-03-29 10:49:28,937 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] Completed initialization in 8 ms
+2021-03-29 10:49:29,009 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-2] SQL Error: 0, SQLState: 42804
+2021-03-29 10:49:29,010 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-2] ERROR: column "file" is of type oid but expression is of type bytea
+  Hint: You will need to rewrite or cast the expression.
+  Position: 125
+2021-03-29 10:49:29,017 WARN org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver [http-nio-8080-exec-2] Resolved [org.springframework.web.server.ResponseStatusException: 400 BAD_REQUEST "could not execute statement; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute statement"]
+2021-03-29 10:49:31,037 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [Thread-61] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-29 10:49:31,040 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [Thread-61] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-29 10:49:31,043 INFO com.zaxxer.hikari.HikariDataSource [Thread-61] HikariPool-10 - Shutdown initiated...
+2021-03-29 10:49:31,173 INFO com.zaxxer.hikari.HikariDataSource [Thread-61] HikariPool-10 - Shutdown completed.
+2021-03-29 10:49:31,988 INFO com.capgemini.TMA.TmaApplication [restartedMain] Starting TmaApplication using Java 1.8.0_251 on LIN51010173 with PID 12164 (C:\Users\sagavade\git\tma\TMA\target\classes started by sagavade in C:\Users\sagavade\git\tma\TMA)
+2021-03-29 10:49:31,989 DEBUG com.capgemini.TMA.TmaApplication [restartedMain] Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-03-29 10:49:31,989 INFO com.capgemini.TMA.TmaApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-03-29 10:49:32,521 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-29 10:49:32,550 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 28 ms. Found 3 JPA repository interfaces.
+2021-03-29 10:49:32,949 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-03-29 10:49:32,950 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-29 10:49:32,951 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2021-03-29 10:49:32,951 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-03-29 10:49:33,004 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-03-29 10:49:33,005 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1010 ms
+2021-03-29 10:49:33,171 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-29 10:49:33,182 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-11 - Starting...
+2021-03-29 10:49:33,580 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-11 - Start completed.
+2021-03-29 10:49:33,580 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-29 10:49:33,751 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-29 10:49:33,753 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-29 10:49:33,777 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-03-29 10:49:34,045 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-29 10:49:34,135 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-29 10:49:34,436 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-03-29 10:49:34,468 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-03-29 10:49:34,480 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-29 10:49:34,492 INFO com.capgemini.TMA.TmaApplication [restartedMain] Started TmaApplication in 2.593 seconds (JVM running for 5509.332)
+2021-03-29 10:49:34,501 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-03-29 10:50:13,984 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-29 10:50:13,986 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2021-03-29 10:50:13,993 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] Completed initialization in 7 ms
+2021-03-29 10:50:14,059 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-2] SQL Error: 0, SQLState: 42804
+2021-03-29 10:50:14,060 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-2] ERROR: column "file" is of type oid but expression is of type bytea
+  Hint: You will need to rewrite or cast the expression.
+  Position: 125
+2021-03-29 10:50:14,068 WARN org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver [http-nio-8080-exec-2] Resolved [org.springframework.web.server.ResponseStatusException: 400 BAD_REQUEST "could not execute statement; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute statement"]
+2021-03-29 10:51:09,747 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-4] SQL Error: 0, SQLState: 42804
+2021-03-29 10:51:09,748 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-4] ERROR: column "file" is of type oid but expression is of type bytea
+  Hint: You will need to rewrite or cast the expression.
+  Position: 125
+2021-03-29 10:51:09,751 WARN org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver [http-nio-8080-exec-4] Resolved [org.springframework.web.server.ResponseStatusException: 400 BAD_REQUEST "could not execute statement; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute statement"]
+2021-03-29 10:51:27,724 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-6] SQL Error: 0, SQLState: 42804
+2021-03-29 10:51:27,725 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-6] ERROR: column "file" is of type oid but expression is of type bytea
+  Hint: You will need to rewrite or cast the expression.
+  Position: 125
+2021-03-29 10:51:27,727 WARN org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver [http-nio-8080-exec-6] Resolved [org.springframework.web.server.ResponseStatusException: 400 BAD_REQUEST "could not execute statement; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute statement"]
+2021-03-29 10:51:41,443 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(98)-127.0.0.1] Application shutdown requested.
+2021-03-29 10:51:42,109 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [RMI TCP Connection(98)-127.0.0.1] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-29 10:51:42,110 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [RMI TCP Connection(98)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-29 10:51:42,114 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(98)-127.0.0.1] HikariPool-11 - Shutdown initiated...
+2021-03-29 10:51:42,165 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(98)-127.0.0.1] HikariPool-11 - Shutdown completed.
+2021-03-29 10:52:04,089 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.1.7.Final
+2021-03-29 10:52:04,174 INFO com.capgemini.TMA.TmaApplication [restartedMain] Starting TmaApplication using Java 1.8.0_251 on LIN51010173 with PID 19104 (C:\Users\sagavade\git\tma\TMA\target\classes started by sagavade in C:\Users\sagavade\git\tma\TMA)
+2021-03-29 10:52:04,176 DEBUG com.capgemini.TMA.TmaApplication [restartedMain] Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-03-29 10:52:04,177 INFO com.capgemini.TMA.TmaApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-03-29 10:52:04,358 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-03-29 10:52:04,358 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-03-29 10:52:06,271 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-29 10:52:06,499 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 188 ms. Found 3 JPA repository interfaces.
+2021-03-29 10:52:10,334 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-03-29 10:52:10,366 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-29 10:52:10,369 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2021-03-29 10:52:10,369 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-03-29 10:52:10,598 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-03-29 10:52:10,599 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 6239 ms
+2021-03-29 10:52:11,449 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-29 10:52:11,656 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-03-29 10:52:12,321 INFO org.hibernate.annotations.common.Version [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-29 10:52:12,836 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2021-03-29 10:52:13,532 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2021-03-29 10:52:13,677 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-29 10:52:16,848 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-29 10:52:16,887 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-29 10:52:16,984 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-03-29 10:52:19,121 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-29 10:52:19,523 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-29 10:52:20,792 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-03-29 10:52:20,905 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-03-29 10:52:20,996 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-29 10:52:21,018 INFO com.capgemini.TMA.TmaApplication [restartedMain] Started TmaApplication in 18.259 seconds (JVM running for 22.293)
+2021-03-29 10:52:22,495 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [RMI TCP Connection(3)-127.0.0.1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-29 10:52:22,496 INFO org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(3)-127.0.0.1] Initializing Servlet 'dispatcherServlet'
+2021-03-29 10:52:22,503 INFO org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(3)-127.0.0.1] Completed initialization in 6 ms
+2021-03-29 10:52:40,910 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-2] SQL Error: 0, SQLState: 42804
+2021-03-29 10:52:40,910 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-2] ERROR: column "file" is of type oid but expression is of type bytea
+  Hint: You will need to rewrite or cast the expression.
+  Position: 125
+2021-03-29 10:52:40,947 WARN org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver [http-nio-8080-exec-2] Resolved [org.springframework.web.server.ResponseStatusException: 400 BAD_REQUEST "could not execute statement; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute statement"]
+2021-03-29 10:54:35,911 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-5] SQL Error: 0, SQLState: 42804
+2021-03-29 10:54:35,912 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-5] ERROR: column "file" is of type oid but expression is of type bytea
+  Hint: You will need to rewrite or cast the expression.
+  Position: 125
+2021-03-29 10:54:35,915 WARN org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver [http-nio-8080-exec-5] Resolved [org.springframework.web.server.ResponseStatusException: 400 BAD_REQUEST "could not execute statement; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute statement"]
+2021-03-29 10:55:00,570 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-7] SQL Error: 0, SQLState: 42804
+2021-03-29 10:55:00,571 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-7] ERROR: column "file" is of type oid but expression is of type bytea
+  Hint: You will need to rewrite or cast the expression.
+  Position: 125
+2021-03-29 10:55:00,574 WARN org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver [http-nio-8080-exec-7] Resolved [org.springframework.web.server.ResponseStatusException: 400 BAD_REQUEST "could not execute statement; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute statement"]
+2021-03-29 10:55:43,535 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-9] SQL Error: 0, SQLState: 42P01
+2021-03-29 10:55:43,537 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-9] ERROR: relation "player" does not exist
+  Position: 13
+2021-03-29 10:55:43,542 WARN org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver [http-nio-8080-exec-9] Resolved [org.springframework.web.server.ResponseStatusException: 400 BAD_REQUEST "could not execute statement; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute statement"]
+2021-03-29 10:56:09,019 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(8)-127.0.0.1] Application shutdown requested.
+2021-03-29 10:56:09,892 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [RMI TCP Connection(8)-127.0.0.1] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-29 10:56:09,898 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [RMI TCP Connection(8)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-29 10:56:09,913 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(8)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+2021-03-29 10:56:09,962 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(8)-127.0.0.1] HikariPool-1 - Shutdown completed.
+2021-03-29 10:56:27,920 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.1.7.Final
+2021-03-29 10:56:28,018 INFO com.capgemini.TMA.TmaApplication [restartedMain] Starting TmaApplication using Java 1.8.0_251 on LIN51010173 with PID 11936 (C:\Users\sagavade\git\tma\TMA\target\classes started by sagavade in C:\Users\sagavade\git\tma\TMA)
+2021-03-29 10:56:28,019 DEBUG com.capgemini.TMA.TmaApplication [restartedMain] Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-03-29 10:56:28,020 INFO com.capgemini.TMA.TmaApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-03-29 10:56:28,236 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-03-29 10:56:28,236 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-03-29 10:56:40,229 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-29 10:56:40,440 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 165 ms. Found 3 JPA repository interfaces.
+2021-03-29 10:56:43,779 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-03-29 10:56:43,809 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-29 10:56:43,812 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2021-03-29 10:56:43,813 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-03-29 10:56:44,136 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-03-29 10:56:44,137 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 15898 ms
+2021-03-29 10:56:45,040 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-29 10:56:45,327 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-03-29 10:56:46,023 INFO org.hibernate.annotations.common.Version [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-29 10:56:46,736 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2021-03-29 10:56:47,523 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2021-03-29 10:56:47,698 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-29 10:56:51,359 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-29 10:56:51,405 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-29 10:56:51,611 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-03-29 10:56:54,259 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-29 10:56:54,539 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-29 10:56:55,784 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-03-29 10:56:55,870 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-03-29 10:56:55,989 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-29 10:56:56,023 INFO com.capgemini.TMA.TmaApplication [restartedMain] Started TmaApplication in 29.267 seconds (JVM running for 32.919)
+2021-03-29 10:56:57,169 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [RMI TCP Connection(3)-127.0.0.1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-29 10:56:57,170 INFO org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(3)-127.0.0.1] Initializing Servlet 'dispatcherServlet'
+2021-03-29 10:56:57,172 INFO org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(3)-127.0.0.1] Completed initialization in 2 ms
+2021-03-29 11:00:38,375 WARN org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver [http-nio-8080-exec-10] Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'com.capgemini.entity.TeamName'; nested exception is org.springframework.core.convert.ConversionFailedException: Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.PathVariable com.capgemini.entity.TeamName] for value 'rr'; nested exception is java.lang.IllegalArgumentException: No enum constant com.capgemini.entity.TeamName.rr]
+2021-03-29 11:05:43,981 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [Thread-8] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-29 11:05:44,005 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [Thread-8] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-29 11:05:44,053 INFO com.zaxxer.hikari.HikariDataSource [Thread-8] HikariPool-1 - Shutdown initiated...
+2021-03-29 11:05:44,103 INFO com.zaxxer.hikari.HikariDataSource [Thread-8] HikariPool-1 - Shutdown completed.
+2021-03-29 11:05:45,326 INFO com.capgemini.TMA.TmaApplication [restartedMain] Starting TmaApplication using Java 1.8.0_251 on LIN51010173 with PID 11936 (C:\Users\sagavade\git\tma\TMA\target\classes started by sagavade in C:\Users\sagavade\git\tma\TMA)
+2021-03-29 11:05:45,327 DEBUG com.capgemini.TMA.TmaApplication [restartedMain] Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-03-29 11:05:45,327 INFO com.capgemini.TMA.TmaApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-03-29 11:05:47,170 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-29 11:05:47,223 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 51 ms. Found 3 JPA repository interfaces.
+2021-03-29 11:05:48,997 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-03-29 11:05:48,998 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-29 11:05:48,999 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2021-03-29 11:05:49,000 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-03-29 11:05:49,050 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-03-29 11:05:49,050 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 3714 ms
+2021-03-29 11:05:49,229 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-29 11:05:49,243 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Starting...
+2021-03-29 11:05:49,529 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Start completed.
+2021-03-29 11:05:49,530 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-29 11:05:49,957 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-29 11:05:49,958 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-29 11:05:50,004 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-03-29 11:05:50,367 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-29 11:05:50,486 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-29 11:05:50,854 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-03-29 11:05:50,910 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-03-29 11:05:50,928 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-29 11:05:50,944 INFO com.capgemini.TMA.TmaApplication [restartedMain] Started TmaApplication in 5.801 seconds (JVM running for 567.853)
+2021-03-29 11:05:50,957 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-03-29 11:06:11,945 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-29 11:06:11,959 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2021-03-29 11:06:11,971 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] Completed initialization in 8 ms
+2021-03-29 11:06:11,990 WARN org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver [http-nio-8080-exec-2] Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'com.capgemini.entity.TeamName'; nested exception is org.springframework.core.convert.ConversionFailedException: Failed to convert from type [java.lang.String] to type [@org.springframework.web.bind.annotation.PathVariable com.capgemini.entity.TeamName] for value 'Rajasthan Royals'; nested exception is java.lang.IllegalArgumentException: No enum constant com.capgemini.entity.TeamName.Rajasthan Royals]
+2021-03-29 11:07:02,579 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [Thread-12] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-29 11:07:02,583 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [Thread-12] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-29 11:07:02,586 INFO com.zaxxer.hikari.HikariDataSource [Thread-12] HikariPool-2 - Shutdown initiated...
+2021-03-29 11:07:02,627 INFO com.zaxxer.hikari.HikariDataSource [Thread-12] HikariPool-2 - Shutdown completed.
+2021-03-29 11:07:03,170 INFO com.capgemini.TMA.TmaApplication [restartedMain] Starting TmaApplication using Java 1.8.0_251 on LIN51010173 with PID 11936 (C:\Users\sagavade\git\tma\TMA\target\classes started by sagavade in C:\Users\sagavade\git\tma\TMA)
+2021-03-29 11:07:03,171 DEBUG com.capgemini.TMA.TmaApplication [restartedMain] Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-03-29 11:07:03,172 INFO com.capgemini.TMA.TmaApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-03-29 11:07:03,942 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-29 11:07:03,977 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 33 ms. Found 3 JPA repository interfaces.
+2021-03-29 11:07:04,631 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-03-29 11:07:04,632 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-29 11:07:04,633 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2021-03-29 11:07:04,634 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-03-29 11:07:04,673 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-03-29 11:07:04,674 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1492 ms
+2021-03-29 11:07:04,814 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-29 11:07:04,823 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-3 - Starting...
+2021-03-29 11:07:05,154 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-3 - Start completed.
+2021-03-29 11:07:05,155 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-29 11:07:05,400 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-29 11:07:05,402 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-29 11:07:05,434 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-03-29 11:07:05,695 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-29 11:07:05,769 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-29 11:07:06,051 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-03-29 11:07:06,086 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-03-29 11:07:06,108 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-29 11:07:06,120 INFO com.capgemini.TMA.TmaApplication [restartedMain] Started TmaApplication in 3.094 seconds (JVM running for 643.03)
+2021-03-29 11:07:06,126 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-03-29 11:07:20,834 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-29 11:07:20,837 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2021-03-29 11:07:20,844 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] Completed initialization in 6 ms
+2021-03-29 13:02:31,824 WARN com.zaxxer.hikari.pool.HikariPool [HikariPool-3 housekeeper] HikariPool-3 - Thread starvation or clock leap detected (housekeeper delta=48m25s376ms990µs500ns).
+2021-03-29 14:33:30,572 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(174)-127.0.0.1] Application shutdown requested.
+2021-03-29 14:33:31,895 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [RMI TCP Connection(174)-127.0.0.1] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-29 14:33:31,912 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [RMI TCP Connection(174)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-29 14:33:31,970 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(174)-127.0.0.1] HikariPool-3 - Shutdown initiated...
+2021-03-29 14:33:32,007 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(174)-127.0.0.1] HikariPool-3 - Shutdown completed.
+2021-03-29 18:04:47,491 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.1.7.Final
+2021-03-29 18:04:47,546 INFO com.capgemini.TMA.TmaApplication [restartedMain] Starting TmaApplication using Java 1.8.0_251 on LIN51010173 with PID 22276 (C:\Users\sagavade\git\tma\TMA\target\classes started by sagavade in C:\Users\sagavade\git\tma\TMA)
+2021-03-29 18:04:47,546 DEBUG com.capgemini.TMA.TmaApplication [restartedMain] Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-03-29 18:04:47,546 INFO com.capgemini.TMA.TmaApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-03-29 18:04:47,647 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-03-29 18:04:47,647 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-03-29 18:04:48,904 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-29 18:04:49,006 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 83 ms. Found 3 JPA repository interfaces.
+2021-03-29 18:04:50,718 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-03-29 18:04:50,754 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-29 18:04:50,757 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2021-03-29 18:04:50,757 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-03-29 18:04:51,073 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-03-29 18:04:51,073 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 3425 ms
+2021-03-29 18:04:51,608 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-29 18:04:51,751 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-03-29 18:04:52,138 INFO org.hibernate.annotations.common.Version [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-29 18:04:52,466 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2021-03-29 18:04:52,853 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2021-03-29 18:04:52,928 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-29 18:04:54,719 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-29 18:04:54,742 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-29 18:04:54,807 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-03-29 18:04:58,242 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-29 18:04:58,843 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-29 18:04:59,883 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-03-29 18:04:59,991 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-03-29 18:05:00,072 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-29 18:05:00,106 INFO com.capgemini.TMA.TmaApplication [restartedMain] Started TmaApplication in 13.28 seconds (JVM running for 15.376)
+2021-03-29 18:05:02,710 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [RMI TCP Connection(3)-127.0.0.1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-29 18:05:02,710 INFO org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(3)-127.0.0.1] Initializing Servlet 'dispatcherServlet'
+2021-03-29 18:05:02,713 INFO org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(3)-127.0.0.1] Completed initialization in 2 ms
+2021-03-29 18:08:04,777 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(9)-127.0.0.1] Application shutdown requested.
+2021-03-29 18:08:05,213 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [RMI TCP Connection(9)-127.0.0.1] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-29 18:08:05,217 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [RMI TCP Connection(9)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-29 18:08:05,227 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(9)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+2021-03-29 18:08:05,252 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(9)-127.0.0.1] HikariPool-1 - Shutdown completed.
+2021-03-29 19:38:15,137 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.1.7.Final
+2021-03-29 19:38:15,209 INFO com.capgemini.TMA.TmaApplication [restartedMain] Starting TmaApplication using Java 1.8.0_251 on LIN51010173 with PID 2708 (C:\Users\sagavade\git\tma\TMA\target\classes started by sagavade in C:\Users\sagavade\git\tma\TMA)
+2021-03-29 19:38:15,210 DEBUG com.capgemini.TMA.TmaApplication [restartedMain] Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-03-29 19:38:15,210 INFO com.capgemini.TMA.TmaApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-03-29 19:38:15,378 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-03-29 19:38:15,378 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-03-29 19:38:17,373 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-29 19:38:17,584 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 173 ms. Found 3 JPA repository interfaces.
+2021-03-29 19:38:20,333 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-03-29 19:38:20,359 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-29 19:38:20,362 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2021-03-29 19:38:20,362 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-03-29 19:38:20,642 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-03-29 19:38:20,643 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 5262 ms
+2021-03-29 19:38:21,374 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-29 19:38:21,571 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-03-29 19:38:22,064 INFO org.hibernate.annotations.common.Version [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-29 19:38:22,464 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2021-03-29 19:38:23,059 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2021-03-29 19:38:23,199 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-29 19:38:26,024 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-29 19:38:26,048 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-29 19:38:26,138 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-03-29 19:38:27,971 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-29 19:38:28,267 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-29 19:38:29,266 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-03-29 19:38:29,335 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-03-29 19:38:29,414 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-29 19:38:29,434 INFO com.capgemini.TMA.TmaApplication [restartedMain] Started TmaApplication in 15.498 seconds (JVM running for 18.964)
+2021-03-29 19:38:30,901 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [RMI TCP Connection(3)-127.0.0.1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-29 19:38:30,902 INFO org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(3)-127.0.0.1] Initializing Servlet 'dispatcherServlet'
+2021-03-29 19:38:30,906 INFO org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(3)-127.0.0.1] Completed initialization in 4 ms
+2021-03-29 19:49:08,474 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(15)-127.0.0.1] Application shutdown requested.
+2021-03-29 19:49:09,263 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [RMI TCP Connection(15)-127.0.0.1] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-29 19:49:09,273 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [RMI TCP Connection(15)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-29 19:49:09,297 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(15)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+2021-03-29 19:49:09,351 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(15)-127.0.0.1] HikariPool-1 - Shutdown completed.
+2021-03-29 19:49:38,938 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.1.7.Final
+2021-03-29 19:49:38,993 INFO com.capgemini.TMA.TmaApplication [restartedMain] Starting TmaApplication using Java 1.8.0_251 on LIN51010173 with PID 17212 (C:\Users\sagavade\git\tma\TMA\target\classes started by sagavade in C:\Users\sagavade\git\tma\TMA)
+2021-03-29 19:49:38,994 DEBUG com.capgemini.TMA.TmaApplication [restartedMain] Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-03-29 19:49:38,995 INFO com.capgemini.TMA.TmaApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-03-29 19:49:39,125 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-03-29 19:49:39,125 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-03-29 19:49:40,752 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-29 19:49:40,935 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 155 ms. Found 3 JPA repository interfaces.
+2021-03-29 19:49:43,445 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-03-29 19:49:43,473 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-29 19:49:43,475 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2021-03-29 19:49:43,475 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-03-29 19:49:43,713 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-03-29 19:49:43,715 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 4587 ms
+2021-03-29 19:49:44,422 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-29 19:49:44,604 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-03-29 19:49:45,204 INFO org.hibernate.annotations.common.Version [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-29 19:49:45,757 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2021-03-29 19:49:46,466 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2021-03-29 19:49:46,649 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-29 19:49:49,837 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-29 19:49:49,874 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-29 19:49:49,996 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-03-29 19:49:51,996 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-29 19:49:52,292 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-29 19:49:53,491 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-03-29 19:49:53,595 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-03-29 19:49:53,690 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-29 19:49:53,713 INFO com.capgemini.TMA.TmaApplication [restartedMain] Started TmaApplication in 15.816 seconds (JVM running for 19.19)
+2021-03-29 19:49:55,495 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [RMI TCP Connection(1)-127.0.0.1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-29 19:49:55,496 INFO org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(1)-127.0.0.1] Initializing Servlet 'dispatcherServlet'
+2021-03-29 19:49:55,498 INFO org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(1)-127.0.0.1] Completed initialization in 2 ms
+2021-03-29 19:54:16,143 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [Thread-8] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-29 19:54:16,149 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [Thread-8] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-29 19:54:16,167 INFO com.zaxxer.hikari.HikariDataSource [Thread-8] HikariPool-1 - Shutdown initiated...
+2021-03-29 19:54:16,204 INFO com.zaxxer.hikari.HikariDataSource [Thread-8] HikariPool-1 - Shutdown completed.
+2021-03-29 19:54:16,722 INFO com.capgemini.TMA.TmaApplication [restartedMain] Starting TmaApplication using Java 1.8.0_251 on LIN51010173 with PID 17212 (C:\Users\sagavade\git\tma\TMA\target\classes started by sagavade in C:\Users\sagavade\git\tma\TMA)
+2021-03-29 19:54:16,723 DEBUG com.capgemini.TMA.TmaApplication [restartedMain] Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-03-29 19:54:16,723 INFO com.capgemini.TMA.TmaApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-03-29 19:54:17,531 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-29 19:54:17,579 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 46 ms. Found 3 JPA repository interfaces.
+2021-03-29 19:54:18,359 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-03-29 19:54:18,360 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-29 19:54:18,361 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2021-03-29 19:54:18,362 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-03-29 19:54:18,413 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-03-29 19:54:18,414 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1684 ms
+2021-03-29 19:54:18,542 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-29 19:54:18,551 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Starting...
+2021-03-29 19:54:18,892 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Start completed.
+2021-03-29 19:54:18,893 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-29 19:54:19,192 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-29 19:54:19,194 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-29 19:54:19,242 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-03-29 19:54:19,568 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-29 19:54:19,671 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-29 19:54:20,015 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-03-29 19:54:20,077 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-03-29 19:54:20,101 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-29 19:54:20,118 INFO com.capgemini.TMA.TmaApplication [restartedMain] Started TmaApplication in 3.511 seconds (JVM running for 285.595)
+2021-03-29 19:54:20,129 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-03-29 19:54:25,866 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-29 19:54:25,868 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2021-03-29 19:54:25,876 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] Completed initialization in 6 ms
+2021-03-29 19:54:32,003 WARN org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver [http-nio-8080-exec-3] Resolved [org.springframework.web.server.ResponseStatusException: 400 BAD_REQUEST "Unable to access lob stream; nested exception is org.hibernate.HibernateException: Unable to access lob stream"]
+2021-03-29 20:16:09,361 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [Thread-12] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-29 20:16:09,389 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [Thread-12] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-29 20:16:09,438 INFO com.zaxxer.hikari.HikariDataSource [Thread-12] HikariPool-2 - Shutdown initiated...
+2021-03-29 20:16:09,498 INFO com.zaxxer.hikari.HikariDataSource [Thread-12] HikariPool-2 - Shutdown completed.
+2021-03-29 20:16:11,687 INFO com.capgemini.TMA.TmaApplication [restartedMain] Starting TmaApplication using Java 1.8.0_251 on LIN51010173 with PID 17212 (C:\Users\sagavade\git\tma\TMA\target\classes started by sagavade in C:\Users\sagavade\git\tma\TMA)
+2021-03-29 20:16:11,688 DEBUG com.capgemini.TMA.TmaApplication [restartedMain] Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-03-29 20:16:11,691 INFO com.capgemini.TMA.TmaApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-03-29 20:16:12,659 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-29 20:16:12,714 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 53 ms. Found 3 JPA repository interfaces.
+2021-03-29 20:16:13,630 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-03-29 20:16:13,632 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-29 20:16:13,633 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2021-03-29 20:16:13,633 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-03-29 20:16:13,689 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-03-29 20:16:13,689 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1980 ms
+2021-03-29 20:16:13,849 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-29 20:16:13,867 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-3 - Starting...
+2021-03-29 20:16:14,276 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-3 - Start completed.
+2021-03-29 20:16:14,277 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-29 20:16:14,416 ERROR org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not get constructor for org.hibernate.persister.entity.SingleTableEntityPersister
+2021-03-29 20:16:14,418 WARN org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [restartedMain] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not get constructor for org.hibernate.persister.entity.SingleTableEntityPersister
+2021-03-29 20:16:14,419 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-3 - Shutdown initiated...
+2021-03-29 20:16:14,742 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-3 - Shutdown completed.
+2021-03-29 20:16:14,744 INFO org.apache.catalina.core.StandardService [restartedMain] Stopping service [Tomcat]
+2021-03-29 20:16:14,783 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [restartedMain] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-03-29 20:16:14,894 ERROR org.springframework.boot.SpringApplication [restartedMain] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not get constructor for org.hibernate.persister.entity.SingleTableEntityPersister
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:769)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1313)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302)
+	at com.capgemini.TMA.TmaApplication.main(TmaApplication.java:14)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not get constructor for org.hibernate.persister.entity.SingleTableEntityPersister
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1845)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	... 22 common frames omitted
+Caused by: org.hibernate.MappingException: Could not get constructor for org.hibernate.persister.entity.SingleTableEntityPersister
+	at org.hibernate.persister.internal.PersisterFactoryImpl.createEntityPersister(PersisterFactoryImpl.java:123)
+	at org.hibernate.persister.internal.PersisterFactoryImpl.createEntityPersister(PersisterFactoryImpl.java:77)
+	at org.hibernate.metamodel.internal.MetamodelImpl.initialize(MetamodelImpl.java:181)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:303)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:468)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1259)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	... 26 common frames omitted
+Caused by: org.hibernate.InstantiationException: could not instantiate test object : com.capgemini.entity.Player
+	at org.hibernate.engine.internal.UnsavedValueFactory.instantiate(UnsavedValueFactory.java:43)
+	at org.hibernate.engine.internal.UnsavedValueFactory.getUnsavedIdentifierValue(UnsavedValueFactory.java:68)
+	at org.hibernate.tuple.PropertyFactory.buildIdentifierAttribute(PropertyFactory.java:63)
+	at org.hibernate.tuple.entity.EntityMetamodel.<init>(EntityMetamodel.java:140)
+	at org.hibernate.persister.entity.AbstractEntityPersister.<init>(AbstractEntityPersister.java:609)
+	at org.hibernate.persister.entity.SingleTableEntityPersister.<init>(SingleTableEntityPersister.java:128)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.hibernate.persister.internal.PersisterFactoryImpl.createEntityPersister(PersisterFactoryImpl.java:96)
+	... 34 common frames omitted
+Caused by: java.lang.reflect.InvocationTargetException: null
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.hibernate.engine.internal.UnsavedValueFactory.instantiate(UnsavedValueFactory.java:40)
+	... 44 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	Basic cannot be resolved to a type
+	FetchType cannot be resolved to a variable
+
+	at com.capgemini.entity.Player.<init>(Player.java:73)
+	... 49 common frames omitted
+2021-03-29 20:16:16,664 INFO com.capgemini.TMA.TmaApplication [restartedMain] Starting TmaApplication using Java 1.8.0_251 on LIN51010173 with PID 17212 (C:\Users\sagavade\git\tma\TMA\target\classes started by sagavade in C:\Users\sagavade\git\tma\TMA)
+2021-03-29 20:16:16,667 DEBUG com.capgemini.TMA.TmaApplication [restartedMain] Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-03-29 20:16:16,668 INFO com.capgemini.TMA.TmaApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-03-29 20:16:17,488 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-29 20:16:17,541 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 51 ms. Found 3 JPA repository interfaces.
+2021-03-29 20:16:18,155 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-03-29 20:16:18,157 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-29 20:16:18,158 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2021-03-29 20:16:18,159 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-03-29 20:16:18,204 INFO org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-03-29 20:16:18,205 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1522 ms
+2021-03-29 20:16:18,337 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-29 20:16:18,346 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-4 - Starting...
+2021-03-29 20:16:18,698 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-4 - Start completed.
+2021-03-29 20:16:18,699 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-29 20:16:18,920 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-29 20:16:18,921 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-29 20:16:18,951 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-03-29 20:16:19,449 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-29 20:16:19,602 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-29 20:16:20,012 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-03-29 20:16:20,052 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-03-29 20:16:20,067 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-29 20:16:20,081 INFO com.capgemini.TMA.TmaApplication [restartedMain] Started TmaApplication in 3.575 seconds (JVM running for 1605.558)
+2021-03-29 20:16:20,086 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-03-29 20:16:42,689 INFO org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/] [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-29 20:16:42,693 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2021-03-29 20:16:42,702 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] Completed initialization in 8 ms
+2021-03-29 20:26:10,212 WARN org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver [http-nio-8080-exec-2] Resolved [org.springframework.web.server.ResponseStatusException: 400 BAD_REQUEST "Unable to access lob stream; nested exception is org.hibernate.HibernateException: Unable to access lob stream"]
+2021-03-29 21:21:31,017 WARN com.zaxxer.hikari.pool.HikariPool [HikariPool-4 housekeeper] HikariPool-4 - Thread starvation or clock leap detected (housekeeper delta=55m11s997ms760µs600ns).
+2021-03-29 21:46:32,935 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [Thread-18] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-29 21:46:32,958 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [Thread-18] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-29 21:46:33,018 INFO com.zaxxer.hikari.HikariDataSource [Thread-18] HikariPool-4 - Shutdown initiated...
+2021-03-29 21:46:33,116 INFO com.zaxxer.hikari.HikariDataSource [Thread-18] HikariPool-4 - Shutdown completed.
+2021-03-29 21:46:34,775 INFO com.capgemini.TMA.TmaApplication [restartedMain] Starting TmaApplication using Java 1.8.0_251 on LIN51010173 with PID 17212 (C:\Users\sagavade\git\tma\TMA\target\classes started by sagavade in C:\Users\sagavade\git\tma\TMA)
+2021-03-29 21:46:34,776 DEBUG com.capgemini.TMA.TmaApplication [restartedMain] Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-03-29 21:46:34,776 INFO com.capgemini.TMA.TmaApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-03-29 21:46:36,024 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-29 21:46:36,085 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 60 ms. Found 3 JPA repository interfaces.
+2021-03-29 21:46:37,468 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-03-29 21:46:37,470 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-29 21:46:37,471 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2021-03-29 21:46:37,473 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-03-29 21:46:37,526 INFO org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-03-29 21:46:37,526 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 2736 ms
+2021-03-29 21:46:37,762 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-29 21:46:37,784 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-5 - Starting...
+2021-03-29 21:46:38,161 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-5 - Start completed.
+2021-03-29 21:46:38,162 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-29 21:46:38,429 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-29 21:46:38,431 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-29 21:46:38,475 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-03-29 21:46:38,858 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-29 21:46:38,979 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-29 21:46:39,460 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-03-29 21:46:39,592 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-03-29 21:46:39,630 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-29 21:46:39,662 INFO com.capgemini.TMA.TmaApplication [restartedMain] Started TmaApplication in 5.048 seconds (JVM running for 7024.051)
+2021-03-29 21:46:39,682 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-03-29 21:47:40,850 INFO org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/] [http-nio-8080-exec-3] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-29 21:47:40,852 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-3] Initializing Servlet 'dispatcherServlet'
+2021-03-29 21:47:40,860 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-3] Completed initialization in 6 ms
+2021-03-29 21:48:32,174 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-2] SQL Error: 0, SQLState: 42804
+2021-03-29 21:48:32,175 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-2] ERROR: column "file" is of type oid but expression is of type bytea
+  Hint: You will need to rewrite or cast the expression.
+  Position: 125
+2021-03-29 21:48:32,197 WARN org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver [http-nio-8080-exec-2] Resolved [org.springframework.web.server.ResponseStatusException: 400 BAD_REQUEST "could not execute statement; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute statement"]
+2021-03-29 21:49:12,715 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(74)-127.0.0.1] Application shutdown requested.
+2021-03-29 21:49:13,355 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [RMI TCP Connection(74)-127.0.0.1] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-29 21:49:13,357 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [RMI TCP Connection(74)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-29 21:49:13,360 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(74)-127.0.0.1] HikariPool-5 - Shutdown initiated...
+2021-03-29 21:49:13,378 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(74)-127.0.0.1] HikariPool-5 - Shutdown completed.
+2021-03-29 21:49:53,836 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.1.7.Final
+2021-03-29 21:49:53,879 INFO com.capgemini.TMA.TmaApplication [restartedMain] Starting TmaApplication using Java 1.8.0_251 on LIN51010173 with PID 15008 (C:\Users\sagavade\git\tma\TMA\target\classes started by sagavade in C:\Users\sagavade\git\tma\TMA)
+2021-03-29 21:49:53,880 DEBUG com.capgemini.TMA.TmaApplication [restartedMain] Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-03-29 21:49:53,881 INFO com.capgemini.TMA.TmaApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-03-29 21:49:54,038 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-03-29 21:49:54,038 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-03-29 21:49:55,828 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-29 21:49:56,015 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 156 ms. Found 3 JPA repository interfaces.
+2021-03-29 21:49:58,674 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-03-29 21:49:58,711 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-03-29 21:49:58,714 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2021-03-29 21:49:58,715 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-03-29 21:49:58,942 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-03-29 21:49:58,942 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 4902 ms
+2021-03-29 21:49:59,670 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-29 21:49:59,844 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-03-29 21:50:00,355 INFO org.hibernate.annotations.common.Version [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-29 21:50:00,741 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2021-03-29 21:50:01,420 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2021-03-29 21:50:01,579 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-03-29 21:50:04,239 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-29 21:50:04,269 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-29 21:50:04,391 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-03-29 21:50:06,225 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-29 21:50:06,536 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-29 21:50:07,870 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-03-29 21:50:08,067 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-03-29 21:50:08,227 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-03-29 21:50:08,292 INFO com.capgemini.TMA.TmaApplication [restartedMain] Started TmaApplication in 15.42 seconds (JVM running for 18.929)
+2021-03-29 21:50:10,749 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [RMI TCP Connection(3)-127.0.0.1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-29 21:50:10,750 INFO org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(3)-127.0.0.1] Initializing Servlet 'dispatcherServlet'
+2021-03-29 21:50:10,753 INFO org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(3)-127.0.0.1] Completed initialization in 3 ms
+2021-03-29 21:51:08,103 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-1] SQL Error: 0, SQLState: 42804
+2021-03-29 21:51:08,104 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-1] ERROR: column "file" is of type oid but expression is of type bytea
+  Hint: You will need to rewrite or cast the expression.
+  Position: 125
+2021-03-29 21:51:08,137 WARN org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver [http-nio-8080-exec-1] Resolved [org.springframework.web.server.ResponseStatusException: 400 BAD_REQUEST "could not execute statement; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute statement"]
+2021-03-29 21:53:28,749 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-4] SQL Error: 0, SQLState: 42P01
+2021-03-29 21:53:28,750 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-4] ERROR: relation "player" does not exist
+  Position: 13
+2021-03-29 21:53:28,752 WARN org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver [http-nio-8080-exec-4] Resolved [org.springframework.web.server.ResponseStatusException: 400 BAD_REQUEST "could not execute statement; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute statement"]
+2021-03-29 21:54:08,774 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-6] SQL Error: 0, SQLState: 42P01
+2021-03-29 21:54:08,775 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-6] ERROR: relation "player" does not exist
+  Position: 13
+2021-03-29 21:54:08,780 WARN org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver [http-nio-8080-exec-6] Resolved [org.springframework.web.server.ResponseStatusException: 400 BAD_REQUEST "could not execute statement; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not execute statement"]
+2021-03-29 21:55:12,976 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(8)-127.0.0.1] Application shutdown requested.
+2021-03-29 21:55:13,645 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [RMI TCP Connection(8)-127.0.0.1] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-29 21:55:13,651 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [RMI TCP Connection(8)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-29 21:55:13,667 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(8)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+2021-03-29 21:55:13,717 INFO com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(8)-127.0.0.1] HikariPool-1 - Shutdown completed.

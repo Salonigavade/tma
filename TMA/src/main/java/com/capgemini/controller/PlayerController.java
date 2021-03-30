@@ -8,6 +8,7 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -32,6 +33,7 @@ import lombok.extern.slf4j.Slf4j;
 @RestController
 @RequestMapping("/api")
 @Slf4j
+@CrossOrigin("http://localhost:3000")
 public class PlayerController {
 
 	@Autowired
@@ -137,19 +139,19 @@ public class PlayerController {
 			throw new ResponseStatusException(HttpStatus.BAD_REQUEST,e.getMessage());
 		}
 	}
-	
-	//serach by Descriptin
-		//localhost:8080/api/player/searchByDescription/mi
-		@GetMapping("/player/searchByDescription/{description}")
-		public ResponseEntity<List<Player>> searchPlayerByDescription(@PathVariable Description description){
-			try {
-				List<Player> players=playerService.searchPlayerByDescription(description);
-				return new ResponseEntity<>(players,HttpStatus.OK);
 
-			} catch (PlayerException e) {
-				throw new ResponseStatusException(HttpStatus.BAD_REQUEST,e.getMessage());
-			}
+	//serach by Descriptin
+	//localhost:8080/api/player/searchByDescription/mi
+	@GetMapping("/player/searchByDescription/{description}")
+	public ResponseEntity<List<Player>> searchPlayerByDescription(@PathVariable Description description){
+		try {
+			List<Player> players=playerService.searchPlayerByDescription(description);
+			return new ResponseEntity<>(players,HttpStatus.OK);
+
+		} catch (PlayerException e) {
+			throw new ResponseStatusException(HttpStatus.BAD_REQUEST,e.getMessage());
 		}
+	}
 
 
 	//upload photo
