@@ -34,7 +34,7 @@ public class User {
 	@Id
 	@Column(name = "userId")
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Integer id;
+	private Integer userId;
 	
 	@NotNull
 	@Size(min=3, message="First name should have atleast 3 characters!")

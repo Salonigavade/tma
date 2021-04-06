@@ -10,6 +10,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 @EnableJpaRepositories(basePackages = "com.capgemini.repository")
 public class TmaApplication {
 
+	
 	public static void main(String[] args) {
 		SpringApplication.run(TmaApplication.class, args);
 	}

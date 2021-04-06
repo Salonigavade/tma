@@ -35,9 +35,9 @@ public class PlayerServiceImpl implements PlayerService{
 	private UserRepository userRepository;
 
 	@Override
-	public Player createPlayer(Integer id, Player player) throws PlayerException {
+	public Player createPlayer(Integer userId, Player player) throws PlayerException {
 		try {
-			Optional<User> uOptional=userRepository.findById(id);
+			Optional<User> uOptional=userRepository.findById(userId);
 			User u=null;
 			if(uOptional.isPresent()) {
 				u=uOptional.get();
@@ -144,14 +144,19 @@ public class PlayerServiceImpl implements PlayerService{
 	}
 
 	@Override
-	public boolean uploadPhoto(Integer id,MultipartFile file) throws PlayerException {
+	public boolean uploadPhoto(Integer playerId,MultipartFile[] file) throws PlayerException {
 		boolean isUpload=false;
+		String fileName=null;
 		try {
-			Player player=playerRepository.findById(id).get();
-			String fileName = StringUtils.cleanPath(file.getOriginalFilename());
-
-			player.setPhotos(fileName);
-			player.setFile(file.getBytes());;
+			Player player=playerRepository.findById(playerId).get();
+			for(MultipartFile files : file) {
+				 fileName=files.getOriginalFilename();
+				 player.setPhotos(fileName);
+				player.setFile(files.getBytes());
+				playerRepository.save(player);
+		      }
+			//String fileName = StringUtils.cleanPath(file.getOriginalFilename());
+			
 			playerRepository.save(player);
 			isUpload=true;                
 		} catch (DataAccessException | IOException e) {

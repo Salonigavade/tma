@@ -10,7 +10,7 @@ import com.capgemini.entity.TeamName;
 import com.capgemini.exception.PlayerException;
 
 public interface PlayerService {
-	public Player createPlayer(Integer id,Player player) throws PlayerException;
+	public Player createPlayer(Integer userId,Player player) throws PlayerException;
 	public List<Player> getAllPlayers() throws PlayerException;
 	public Player getPlayerById(Integer playerId) throws PlayerException;
 	public Integer deletePlayerById(Integer playerId) throws PlayerException;
@@ -21,7 +21,7 @@ public interface PlayerService {
 	public List<Player> searchPlayerByLastName(String playerLastName) throws PlayerException;
 	public List<Player> searchPlayerByDescription(Description description) throws PlayerException;
 	
-	public boolean uploadPhoto(Integer id,MultipartFile file) throws PlayerException;
+	public boolean uploadPhoto(Integer playerId,MultipartFile[] file) throws PlayerException;
 	
 	public byte[] getPhotoById(Integer playerId) throws PlayerException;
 	public String getPhotoNameById(Integer playerId) throws PlayerException;

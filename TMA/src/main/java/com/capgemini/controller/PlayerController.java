@@ -42,10 +42,10 @@ public class PlayerController {
 
 	//create player
 	//localhost:8080/api/player/2
-	@PostMapping("/player/{id}")
-	public ResponseEntity<Player> createPlayer(@PathVariable(value = "id") Integer id,@RequestBody Player player){
+	@PostMapping("/player/{userId}")
+	public ResponseEntity<Player> createPlayer(@PathVariable(value = "userId") Integer userId,@RequestBody Player player){
 		try {
-			Player player2=playerService.createPlayer(id,player);
+			Player player2=playerService.createPlayer(userId,player);
 			return new ResponseEntity<>(player2,HttpStatus.CREATED);
 		} catch (PlayerException e) {
 			throw new ResponseStatusException(HttpStatus.BAD_REQUEST,e.getMessage());
@@ -170,14 +170,14 @@ public class PlayerController {
 
 	//upload photo
 	//localhost:8080/api/player/upload/2
-	@PutMapping("/player/upload/{id}")
-	public String uploadPhoto(@PathVariable(value = "id") Integer id,@RequestParam("file") MultipartFile file) {
+	@PutMapping("/player/upload/{playerId}" )
+	public String uploadPhoto(@PathVariable(value = "playerId") Integer playerId,@RequestParam("file") MultipartFile[] file) {
 
 		try {                       
-			boolean isUpload=playerService.uploadPhoto(id,file);
+			boolean isUpload=playerService.uploadPhoto(playerId,file);
 			if(isUpload) {
 				String fileDownloadUri = ServletUriComponentsBuilder.fromCurrentContextPath()
-						.path("/api/player/download/" + id).toUriString();
+						.path("/api/player/download/" + playerId).toUriString();
 				return fileDownloadUri;
 			} else {
 				return "Could not upload certificate!";
