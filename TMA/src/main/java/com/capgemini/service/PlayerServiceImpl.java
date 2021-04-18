@@ -111,7 +111,7 @@ public class PlayerServiceImpl implements PlayerService{
 
 	
 	@Override
-	public List<Player> searchPlayerByTeamName(TeamName teamName) throws PlayerException {
+	public List<Player> searchPlayerByTeamName(String teamName) throws PlayerException {
 		try {
 			return playerRepository.findByTeamName(teamName);
 		} catch (DataAccessException e) {
@@ -121,7 +121,7 @@ public class PlayerServiceImpl implements PlayerService{
 
 	
 	@Override
-	public List<Player> searchPlayerByDescription(Description description) throws PlayerException {
+	public List<Player> searchPlayerByDescription(String description) throws PlayerException {
 		try {
 			return playerRepository.findByDescription(description);
 		} catch (DataAccessException e) {
@@ -144,19 +144,14 @@ public class PlayerServiceImpl implements PlayerService{
 	}
 
 	@Override
-	public boolean uploadPhoto(Integer playerId,MultipartFile[] file) throws PlayerException {
+	public boolean uploadPhoto(MultipartFile file, Integer playerId) throws PlayerException {
 		boolean isUpload=false;
-		String fileName=null;
+//		String fileName=null;
 		try {
 			Player player=playerRepository.findById(playerId).get();
-			for(MultipartFile files : file) {
-				 fileName=files.getOriginalFilename();
-				 player.setPhotos(fileName);
-				player.setFile(files.getBytes());
-				playerRepository.save(player);
-		      }
-			//String fileName = StringUtils.cleanPath(file.getOriginalFilename());
-			
+			String fileName=StringUtils.cleanPath(file.getOriginalFilename());
+			player.setPlayerFile(file.getBytes());
+			player.setFileName(fileName);
 			playerRepository.save(player);
 			isUpload=true;                
 		} catch (DataAccessException | IOException e) {
@@ -169,7 +164,7 @@ public class PlayerServiceImpl implements PlayerService{
 	public byte[] getPhotoById(Integer playerId) throws PlayerException {
 		try {
 			Player player=playerRepository.findById(playerId).get();
-			return player.getFile();
+			return player.getPlayerFile();
 		} catch (DataAccessException e) {
 			throw new PlayerException(e.getMessage(),e);
 		}
@@ -180,7 +175,7 @@ public class PlayerServiceImpl implements PlayerService{
 	public String getPhotoNameById(Integer playerId) throws PlayerException {
 		try {
 			Player player=playerRepository.findById(playerId).get();
-			String fileName = player.getPhotos();
+			String fileName = player.getFileName();
 			return fileName;
 		} catch (DataAccessException e) {
 			throw new PlayerException(e.getMessage(),e);

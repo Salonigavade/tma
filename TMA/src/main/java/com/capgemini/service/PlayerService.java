@@ -17,11 +17,11 @@ public interface PlayerService {
 	public Player updatePlayer(Player player) throws PlayerException;
 	
 	public List<Player> searchPlayerByFirstName(String playerFirstName) throws PlayerException;
-	public List<Player> searchPlayerByTeamName(TeamName teamName) throws PlayerException;
+	public List<Player> searchPlayerByTeamName(String teamName) throws PlayerException;
 	public List<Player> searchPlayerByLastName(String playerLastName) throws PlayerException;
-	public List<Player> searchPlayerByDescription(Description description) throws PlayerException;
+	public List<Player> searchPlayerByDescription(String description) throws PlayerException;
 	
-	public boolean uploadPhoto(Integer playerId,MultipartFile[] file) throws PlayerException;
+	public boolean uploadPhoto(MultipartFile file,Integer playerId) throws PlayerException;
 	
 	public byte[] getPhotoById(Integer playerId) throws PlayerException;
 	public String getPhotoNameById(Integer playerId) throws PlayerException;

@@ -16,6 +16,8 @@ import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -49,33 +51,33 @@ public class Player {
 	
 	@NotNull
 	@Column(name = "teamName")
-	@Enumerated(EnumType.STRING)
-	private TeamName teamName;
+//	@Enumerated(EnumType.STRING)
+	private String teamName;
 	
 	@NotNull
 	@Column(name = "playerStatus")
-	@Enumerated(EnumType.STRING)
-	private PlayerStatus status;
+//	@Enumerated(EnumType.STRING)
+	private String status;
 	
 	@NotNull
 	@Column(name = "description")
-	@Enumerated(EnumType.STRING)
-	private Description description;
+//	@Enumerated(EnumType.STRING)
+	private String description;
 	
 	@Column
-	private String photos;
+	private String fileName;
 	
-//	@JsonIgnore
+	@JsonIgnore
+	@Lob
 	@Column
-	private byte[] file;
+	private byte[] playerFile;
+	
+	
 	
 	@ManyToOne
 	@JoinColumn(name = "user_id")
 	private User user;
 	
-	public Player(byte[] bytes) {
-		this.file=bytes;
-	}
 	
 	
 }
