@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RequestPart;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.server.ResponseStatusException;
@@ -93,7 +94,7 @@ public class PlayerController {
 			p.setTeamName(player.getTeamName());
 			p.setStatus(player.getStatus());
 			p.setDescription(player.getDescription());
-			p.setPhotos(player.getPhotos());
+			p.setFileName(player.getFileName());
 
 			return new ResponseEntity<Player>(playerService.updatePlayer(p),HttpStatus.OK);
 
@@ -144,7 +145,7 @@ public class PlayerController {
 	//serach by team
 	//localhost:8080/api/player/searchByTeam/mi
 	@GetMapping("/player/searchByTeam/{teamName}")
-	public ResponseEntity<List<Player>> searchPlayerByTeamName(@PathVariable TeamName teamName){
+	public ResponseEntity<List<Player>> searchPlayerByTeamName(@PathVariable String teamName){
 		try {
 			List<Player> players=playerService.searchPlayerByTeamName(teamName);
 			return new ResponseEntity<>(players,HttpStatus.OK);
@@ -157,7 +158,7 @@ public class PlayerController {
 	//serach by Descriptin
 	//localhost:8080/api/player/searchByDescription/mi
 	@GetMapping("/player/searchByDescription/{description}")
-	public ResponseEntity<List<Player>> searchPlayerByDescription(@PathVariable Description description){
+	public ResponseEntity<List<Player>> searchPlayerByDescription(@PathVariable String description){
 		try {
 			List<Player> players=playerService.searchPlayerByDescription(description);
 			return new ResponseEntity<>(players,HttpStatus.OK);
@@ -171,16 +172,16 @@ public class PlayerController {
 	//upload photo
 	//localhost:8080/api/player/upload/2
 	@PutMapping("/player/upload/{playerId}" )
-	public String uploadPhoto(@PathVariable(value = "playerId") Integer playerId,@RequestParam("file") MultipartFile[] file) {
+	public String uploadPhoto(@RequestPart("file") MultipartFile file, @PathVariable(value = "playerId") Integer playerId) {
 
 		try {                       
-			boolean isUpload=playerService.uploadPhoto(playerId,file);
+			boolean isUpload=playerService.uploadPhoto(file,playerId);
 			if(isUpload) {
 				String fileDownloadUri = ServletUriComponentsBuilder.fromCurrentContextPath()
 						.path("/api/player/download/" + playerId).toUriString();
 				return fileDownloadUri;
 			} else {
-				return "Could not upload certificate!";
+				return "Could not upload photo!";
 			}
 
 		} catch (PlayerException e) {
