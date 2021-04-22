@@ -18,7 +18,7 @@ import com.capgemini.service.LoginService;
  * The Class LoginController.
  */
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/api/process")
 @CrossOrigin("http://localhost:3000")
 
 public class LoginController {

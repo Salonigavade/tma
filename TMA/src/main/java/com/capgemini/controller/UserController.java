@@ -20,7 +20,7 @@ import com.capgemini.service.UserService;
 import lombok.extern.slf4j.Slf4j;
 
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/api/user")
 @Slf4j
 @CrossOrigin("http://localhost:3000")
 public class UserController {
@@ -30,7 +30,7 @@ public class UserController {
 	
 	//create user
 	//localhost:8080/api/user
-	@PostMapping("/user")
+	@PostMapping("/add-user")
 	public ResponseEntity<User> createUser(@RequestBody User user){
 		try {
 			User user2=userService.createUser(user);
@@ -40,7 +40,7 @@ public class UserController {
 		}
 	}
 	
-	@GetMapping("/user/by-email/{emailId}")
+	@GetMapping("/by-email/{emailId}")
 	public ResponseEntity<User> findByEmailId(@PathVariable String emailId){
 		try {
 			User user2=userService.findByEmailId(emailId);

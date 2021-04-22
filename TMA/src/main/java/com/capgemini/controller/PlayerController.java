@@ -33,7 +33,7 @@ import com.capgemini.service.PlayerService;
 import lombok.extern.slf4j.Slf4j;
 
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/api/player")
 @Slf4j
 @CrossOrigin("http://localhost:3000")
 public class PlayerController {
@@ -43,7 +43,7 @@ public class PlayerController {
 
 	//create player
 	//localhost:8080/api/player/2
-	@PostMapping("/player/{userId}")
+	@PostMapping("/{userId}")
 	public ResponseEntity<Player> createPlayer(@PathVariable(value = "userId") Integer userId,@RequestBody Player player){
 		try {
 			Player player2=playerService.createPlayer(userId,player);
@@ -68,7 +68,7 @@ public class PlayerController {
 
 	//delete by id
 	//localhost:8080/api/player/delete/1
-	@DeleteMapping("/player/delete/{playerId}")
+	@DeleteMapping("/delete/{playerId}")
 	public String deletePlayerById(@PathVariable( value = "playerId") Integer playerId){
 		try {
 			Integer status=playerService.deletePlayerById(playerId);
@@ -83,7 +83,7 @@ public class PlayerController {
 
 	//update player
 	//localhost:8080/api/player/update/1
-	@PutMapping("/player/update/{playerId}")
+	@PutMapping("/update/{playerId}")
 	public ResponseEntity<Player> updatePlayerInfo(@PathVariable( value = "playerId") Integer playerId,@RequestBody Player player){
 		Player p;
 		try {
@@ -105,7 +105,7 @@ public class PlayerController {
 	
 	//serach by id
 		//localhost:8080/api/player/searchById/1
-		@GetMapping("/player/searchById/{playerId}")
+		@GetMapping("/searchById/{playerId}")
 		public ResponseEntity<Player> getById(@PathVariable Integer playerId){
 			try {
 				Player players=playerService.getPlayerById(playerId);
@@ -118,7 +118,7 @@ public class PlayerController {
 
 	//serach by first name
 	//localhost:8080/api/player/searchByFirst/hardik
-	@GetMapping("/player/searchByFirst/{playerFirstName}")
+	@GetMapping("/searchByFirst/{playerFirstName}")
 	public ResponseEntity<List<Player>> serchPlayerByFirstName(@PathVariable String playerFirstName){
 		try {
 			List<Player> players=playerService.searchPlayerByFirstName(playerFirstName);
@@ -131,7 +131,7 @@ public class PlayerController {
 
 	//serach by last name
 	//localhost:8080/api/player/searchByLast/Raina
-	@GetMapping("/player/searchByLast/{playerLastName}")
+	@GetMapping("/searchByLast/{playerLastName}")
 	public ResponseEntity<List<Player>> searchPlayerByLastName(@PathVariable String playerLastName){
 		try {
 			List<Player> players=playerService.searchPlayerByLastName(playerLastName);
@@ -144,7 +144,7 @@ public class PlayerController {
 
 	//serach by team
 	//localhost:8080/api/player/searchByTeam/mi
-	@GetMapping("/player/searchByTeam/{teamName}")
+	@GetMapping("/searchByTeam/{teamName}")
 	public ResponseEntity<List<Player>> searchPlayerByTeamName(@PathVariable String teamName){
 		try {
 			List<Player> players=playerService.searchPlayerByTeamName(teamName);
@@ -157,7 +157,7 @@ public class PlayerController {
 
 	//serach by Descriptin
 	//localhost:8080/api/player/searchByDescription/mi
-	@GetMapping("/player/searchByDescription/{description}")
+	@GetMapping("/searchByDescription/{description}")
 	public ResponseEntity<List<Player>> searchPlayerByDescription(@PathVariable String description){
 		try {
 			List<Player> players=playerService.searchPlayerByDescription(description);
@@ -171,7 +171,7 @@ public class PlayerController {
 
 	//upload photo
 	//localhost:8080/api/player/upload/2
-	@PutMapping("/player/upload/{playerId}" )
+	@PutMapping("/upload/{playerId}" )
 	public String uploadPhoto(@RequestPart("file") MultipartFile file, @PathVariable(value = "playerId") Integer playerId) {
 
 		try {                       
@@ -191,7 +191,7 @@ public class PlayerController {
 
 	//download photo
 	//http://localhost:8080/api/player/download/1
-	@GetMapping("/player/download/{playerId}")
+	@GetMapping("/download/{playerId}")
 	public ResponseEntity downloadFromDB(@PathVariable Integer playerId) {
 
 		try {
